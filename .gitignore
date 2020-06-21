@@ -1,0 +1,5 @@
+anido_env/
+**/__pycache__
+**/__init__.py
+.DS_Store
+/static/admin/

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+.subtitulo{
+    background-image: url(nido.png);
+    background-blend-mode: color-dodge;
+    background-color: #ffffffe0;
+    background-size: 200%;
+    background-position: center;
+    border-top: 5px black;
+}
+
+
+
+
+.datos{
+    background-color: #fbf5ec;
+    margin-left: 15vw;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid #bf945d;
+    font-family: letter-gothic-std, monospace;
+    width: 35vw;
+}
+
+.label{
+    display: inline-block;
+    text-align: right;
+    padding: 2%;
+    /*margin-right: 5vw;*/
+    width: 10vw;
+}
+
+.dato{
+    display: inline-block;
+    padding: 2%;
+    width: 20vw;
+}
+
