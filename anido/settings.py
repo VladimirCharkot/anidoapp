@@ -24,7 +24,7 @@ with open('/etc/anido_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost','162.243.162.53','.colectivoanido.com']
 

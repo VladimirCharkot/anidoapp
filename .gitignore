@@ -3,3 +3,4 @@ anido_env/
 **/__init__.py
 .DS_Store
 /static/admin/
+anido_test.db
