@@ -1,0 +1,32 @@
+<div id="contenido" style="--color_filtro: #c0d5f0ab; --imagen_seccion: url({{ contenido.imagen_titulo }});">
+
+    <div id="titulo" style="--imagen_titulo: url({{ contenido.imagen_titulo }}); --color_titulo: #5a7bd1ab;">
+
+        <h2>{{ contenido.titulo | safe }}</h2>
+        {% if contenido.pdf %}
+        <div id="descarga">
+            <a href="{{ contenido.pdf.link }}" download="{{ contenido.pdf.nombre }}"><img id="descargar_pdf"
+                                                                                        src="/static/blog/pdf.svg"/></a>
+        </div>
+        {% endif %}
+    </div>
+
+    {% if contenido.intro %}
+    <p id="intro">{{ contenido.intro }}</p>
+    {% endif %}
+
+    {% if contenido.caratula %}
+    <div id="caratula">
+        {% include contenido.caratula %}
+    </div>
+    {% endif %}
+
+    {{ contenido.html|safe }}
+
+    {% if extras %}
+        {% for extra in extras %}
+            {% include extra %}
+        {% endfor %}
+    {% endif %}
+
+</div>

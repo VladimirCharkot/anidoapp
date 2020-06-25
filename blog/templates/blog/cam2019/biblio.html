@@ -1,0 +1,152 @@
+<style>
+
+    /* Bibliografia */
+
+    .biblio-notas{
+        text-align: right;
+        font-family: 'Jost';
+        font-size: 0.85em;
+        padding-top: 1%;
+        padding-left: 40%;
+        padding-right: 2%;
+        margin-bottom: 100px;
+    }
+
+
+
+    .biblio-lista{
+        font-family: 'DM Mono', monospace;
+        margin: 0 20%;
+        display:flex;
+        flex-flow:column nowrap;
+    }
+
+
+    .biblio-item {
+        display:flex;
+        justify-content:flex-start;
+        padding:0.3rem 0;
+        order:0;
+    }
+
+    .biblio-item::before {  /* puntitos */
+        content:"";
+        display:block;
+        border-bottom:1px dotted black;
+        position:relative; top:-3px;
+        flex:1 1 auto;
+        margin:0 1rem;
+        order:1;
+    }
+
+    .biblio-item::after { /* autores */
+        content: attr(autor);
+        flex:0 0 auto;
+        order:2;
+        /*transform: scale(1.2);*/
+        text-decoration:underline;
+        max-width: 40%;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    .biblio-descrip{
+        padding: 20px;
+    }
+
+    /* Efectos de la bibliografía... solo si hay :hover en el dispositivo */
+
+    @media (any-hover: hover) {
+        .biblio-descrip{
+            max-height: 2ch;
+            font-size: 0.8em;
+            transform:scaleY(0.1);
+            transform-origin:center top;
+            transition:transform 0.2s, max-height 0.5s;
+        }
+
+        .biblio-elem:hover .biblio-descrip {
+            max-height:20em;
+            transform:scaleY(1);
+        }
+
+        .biblio-lista:hover > ul > .biblio-elem { opacity:0.3; }
+
+
+        .biblio-elem:hover {
+            transition:background-color 0.3s;
+            /*background:rgba(255,255,100,0.15);*/
+            background: #d7eac940;
+            opacity:1 !important;
+        }
+
+    }
+
+    /* Márgenes */
+    @media only screen
+    and (max-device-width: 800px){
+        .biblio-lista{ margin: 2% 5%; }
+        .biblio-elem { padding: 2%; }
+    }
+
+</style>
+
+
+<div class="subtitulo" style="--imagen_seccion: url(/static/blog/fotos/cam_3.jpg);">
+    <h3>Recomendaciones de textos para leer.</h3>
+</div>
+
+<div class="biblio-notas">
+    <p><strong>Nota I:</strong> la bibliografía sugerida que trabaja específicamente sobre temáticas de “educación escolar”, pueden trasladarse a la realidad de la educación no formal y educación circense. Lo que interesa es el uso de las categorías e ideas para poner en movimiento la reflexión sobre las prácticas docentes más que el contexto en el que se apliquen en sí.</p>
+
+    <p><strong>Nota II:</strong> procuramos sugerir bibliografía que puede encontrarse fácilmente en la web. O nos escriben al correo y les enviamos el material que deseen.</p>
+
+    <p><strong>Nota III:</strong> El Educador Popular Brasileño Paulo Freire es recomendable desde principio a fin todos sus libros… ahora, estos dos los consideramos fundamentales para pensarse como docentes.</p>
+</div>
+
+
+
+
+<nav class="biblio-lista">
+
+    <ul>
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Freire, Paulo">“Cartas para quien pretende enseñar”</p>
+            <p class="biblio-descrip">“Cartas para quien pretende enseñar”. Son distintas cartas con diferentes temáticas para quienes se están formando como docentes. Pasa por las preguntas y debates éticos – filosóficos que seguramente nos dan vueltas a todxs quienes estamos pensando en ocupar roles de docencia.</p>
+        </li>
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Freire, Paulo">“El grito manso”</p>
+            <p class="biblio-descrip">Plantea los elementos de la situación educativa y pueden ser útiles a la hora de pensar una planificación.</p></li>
+        </li>
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Gardner, Howard">“Estructuras de la Mente”. La Teoría de Las Inteligencias Múltiples.</p>
+            <p class="biblio-descrip">Este libro lo sugerimos especialmente para todxs aquellxs que han mostrado interés en el trabajo de “Malabarismo Funcional” de Craig Quat y para quienes están inclinadxs hacia el circo social. Si bien es ampliamente teórico, el autor comparte su investigación sobre 7 inteligencias que operan en la estructura mental del ser humano. En la segunda parte del libro están planteadas: las inteligencias lingüística y lógico matemática; la inteligencia musical; la inteligencia espacial; la inteligencia cinestésico-corporal; y dos formas de inteligencia personal: una que se dirige hacia los demás y otra que apunta hacia la propia persona. Consideramos que sirve para pensar la enseñanza en función de las variables formas de aprender que la mente puede desarrollar.<p>
+        </li>
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Gvirtz, Silvina y Palamidessi, Mariano">“El ABC de la enseñanza”</p>
+            <p class="biblio-descrip">Este libro lo dejamos para quienes quieran adentrarse a las bases del lenguaje pedagógico. Sobre todo la segunda parte del libro trabaja sobre aspectos del concepto aprendizaje, aborda “modelos de enseñanza” desde corrientes filosóficas, y lo más útil que puede resultarles es que da indicios y características a tener en cuenta a la hora de pensar la planificación didáctica.<p>
+        </li>
+
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Meirieu, Philippe">“Frankenstein Educador”</p>
+            <p class="biblio-descrip">Es un claro y útil libro para adentrarse en las críticas contemporáneas al sistema educativo desde grietas que pueden arrojar claridad para el accionar propio en las prácticas de enseñanza. Mueve tantas ideas desde un lugar tan sencillo que consideramos que puede ayudar para encontrar las propias convicciones para “pararse” como docente.</p>
+        </li>
+
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Ranciére, Jaques">“El espectador Emancipado”</p>
+            <p class="biblio-descrip">Este libro requiere de una lectura despierta. No tiene una referencia directa al aula. Tal como el título lo indica con “espectador”, juega con un lenguaje más cercano al teatro que a la escuela formal. Trabaja las ideas de “emancipación intelectual”, cuestionando el lugar del saber, la ignorancia, alumnx, docente. Para aquellxs que se preguntan cómo pensarse como docente en procesos que haga despegar a otrx, aquellxs atravesadxs por la asimetría entre el saber y el vínculo docente – alumnx.</p>
+        </li>
+
+        <li class="biblio-elem">
+            <p class="biblio-item" autor="Suarez, Daniel">“Documentación narrativa de experiencias pedagógicas”</p>
+            <p class="biblio-descrip"><a href="https://revistas.pedagogica.edu.co/index.php/NYN/article/view/1228/1225">Artículo de una revista.</a> (30 páginas). El autor trabaja el concepto de “documentación narrativa” refiriéndose a las escrituras que puede hacer el docente sobre su experiencia en las clases. Muestra la potencialidad de este ejercicio como herramienta principal de reflexión sobre su práctica de enseñanza y de visibilización del trabajo docente a partir de construir conocimiento desde la práctica.</p>
+        </li>
+
+    </ul>
+</nav>

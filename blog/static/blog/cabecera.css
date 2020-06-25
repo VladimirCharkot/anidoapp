@@ -17,7 +17,8 @@
 #cabecera{
     font-family: letter-gothic-std, monospace;
     margin: auto 0 auto 0;
-    background-color: white;
+    /*background-color: white;*/
+    background: linear-gradient(0deg, rgba(255,255,255,0), rgb(255, 255, 255));
     
     z-index: 99;
     
@@ -33,7 +34,7 @@
     transition: 0.8s;
     padding-left: 5%;
     /*background-color: #ECF8FF;*/
-    background-color: white;
+
     border-top-width: 2px;
     border-top-style: solid;
     border-top-color: #bbb;

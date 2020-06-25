@@ -1,0 +1,59 @@
+<!-- Cabecera -->
+<!--<div id="cabecera">
+
+    <div id="titular">
+        <div id="nidito"><image source="/static/blog/nido.png" class="sizer" style="height: 120px;"></image></div>
+        <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
+    </div>
+
+    <div id="nav" class="nav"></div>
+
+</div>-->
+
+
+
+<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+
+  <span class="mdc-tab__content">
+    <span class="mdc-tab__text-label">Nosotres</span>
+  </span>
+
+  <span class="mdc-tab__content">
+    <span class="mdc-tab__text-label">Proyectos</span>
+  </span>
+
+  <!--<span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>-->
+
+  <span class="mdc-tab__ripple"></span>
+</button>
+
+
+<script>
+    const MDCTab = mdc.tab.MDCTab;
+    var tab = new MDCTab(document.querySelector('.mdc-tab'));
+</script>
+
+
+
+<!-- Tooltips y referencias -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="/static/blog/menu.js"></script>
+<script src="/static/blog/scroll.js"></script>
+
+<!--
+<head>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components- web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<button class="mdc-button foo-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span>
+</button>
+
+<script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));</script>
+
+-->
