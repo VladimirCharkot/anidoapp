@@ -24,7 +24,7 @@
 
 #contenido{
     position: absolute;
-    top: 10vw;;     /* Lo que mide la cabecera */
+    top: 10vw;     /* Lo que mide la cabecera */
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
     font-size: 1rem;
@@ -87,10 +87,10 @@ body {
 }
 
 @media (width < 1140px){
-    #contenido { margin: 0vw; font-size: 1.2rem; }
+    #contenido { margin: 0vw; font-size: 1.5rem; top: 15vw; }
 }
 
 @media only screen
 and (max-device-width: 800px){
-    #contenido { margin: 0vw; font-size: 1.2rem; }
+    #contenido { margin: 0vw; font-size: 1.5rem; top: 15vw; }
 }
