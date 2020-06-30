@@ -24,7 +24,7 @@
 
 #contenido{
     position: absolute;
-    top: 130px;     /* Lo que mide la cabecera */
+    top: 10vw;;     /* Lo que mide la cabecera */
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
     font-size: 1rem;
@@ -37,7 +37,7 @@
     letter-spacing: 0.5vw;
     position: relative;
     
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-align: center;
     padding: 10vw;
     padding-top: 8vw;
@@ -86,14 +86,11 @@ body {
   padding-bottom: 3em;
 }
 
+@media (width < 1140px){
+    #contenido { margin: 0vw; font-size: 1.2rem; }
+}
 
 @media only screen
 and (max-device-width: 800px){
-    .nav_btn { font-size: 1.2rem; }
-    
-    .contenido { margin: 0px; }
-    .contenido { font-size: 1.8rem; }
-    #intro { font-size: 1.9rem; }
-    #titulo { font-size: 2rem;
-        padding: 5%; }
+    #contenido { margin: 0vw; font-size: 1.2rem; }
 }

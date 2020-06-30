@@ -12,19 +12,19 @@
 
 @font-face {
     font-family: "Jost";
-    src: url("./Jost/static/Jost-MediumItalic.otf");
+    src: url("./Jost/static/Jost-MediumItalic.ttf");
     font-style: italic, oblique;
 }
 
 @font-face {
     font-family: "Jost";
-    src: url("./Jost/static/Jost-Bold.otf");
+    src: url("./Jost/static/Jost-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Jost";
-    src: url("./Jost/static/Jost-Medium.otf");
+    src: url("./Jost/static/Jost-Medium.ttf");
 }
 
 
@@ -39,14 +39,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 130px;
-  padding: 10px 30px;
+  height: 10vw;
+  padding: 1vw 3vw;
+
   box-sizing: border-box;
   transition: .3s;
   z-index: 99;
   background: rgba(255,255,255,0.95);
   /*background: linear-gradient(0deg, rgba(255,255,255,0.6), rgb(255, 255, 255));*/
   border-bottom: 1px solid #f797a7;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#titular{
+
 }
 
 #menu.contraido{
@@ -69,7 +77,7 @@
 }
 
 #menu .logo {
-  padding: 22px 20px;
+  padding: 2vw 2vw;
   /*height: 80px;*/
   float: left;
   transition: .3s;
@@ -89,7 +97,7 @@
 }
 
 #menu ul li a {
-  line-height: 100px;
+  line-height: 8vw;
   color: #151515;
   padding: 12px 30px;
   text-decoration: none;
@@ -116,6 +124,9 @@
 	 /*display: none;*/
 	 background: white;
 	 transition: .3s;
+
+	 display: flex;
+	 flex-direction: row;
 }
 
 #menu ul li:hover > ul, .submenu:hover {
@@ -153,25 +164,20 @@ h1 a{
     background-repeat: no-repeat;
     filter: opacity(0.8);
 
-    margin: auto 0 auto 30px;
-    width: 110px;
-    height: 80px;
+    margin: auto 0 auto 3vw;
+    width: 7vw;
+    height: 6vw;
 
     transition: .3s;
 }
 
-
-.tippy-box[data-theme~='menu'] {
-    background-color: #f0ffffaa;
-    font-size: 1rem;
-    font-family: letter-gothic-std, monospace;
-    text-decoration: none;
-    color: #333;
-    /*border: 2px solid rgba(0,0,0,.15);*/
-    padding: 4%;
-    width: 300px;
+@media (width < 1140px){
+    h1 { visibility: hidden; }
+    .submenu { flex-direction: column; }
 }
 
-.tippy-content{
-    width: max-content;
+@media only screen
+and (max-device-width: 800px){
+    h1 { visibility: hidden; }
+    .submenu { flex-direction: column; }
 }

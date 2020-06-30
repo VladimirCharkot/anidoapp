@@ -139,19 +139,16 @@ h4{
 }*/
 
 
+@media (width < 1140px){
+    .articulo > p, .footnote { padding: 1% 5% 1% 5%; }
+    .contenido { margin: 0vw; }
+}
+
 @media only screen
 and (max-device-width: 800px){
-    /* Asegurarse de que en celular se entienda que las referencias son clickeables: */
-    .ref { color: blue; text-decoration: underline; }
-
-    /* Tamaño de fuente más grande */
-    .tippy-box[data-theme~='azure'] { font-size: 1.2rem }
-    
-    #agradecimientos{ font-size: 1.2rem; }
-    #agradecimientos{ font-size: 1.2rem; }
-    #equipo{ font-size: 1.2rem; }
-
+    #contenido { margin: 0vw; font-size: 1.2rem; }
 }
+
 
 
 
