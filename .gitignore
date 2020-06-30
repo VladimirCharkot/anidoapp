@@ -4,3 +4,4 @@ anido_env/
 .DS_Store
 /static/admin/
 anido_test.db
+.idea

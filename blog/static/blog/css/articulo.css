@@ -6,6 +6,7 @@ html{
 
 .articulo > p, .footnote {
     font-family: 'Jost', sans-serif;
+    font-weight: 400;
     padding: 1% 15% 1% 15%;
     text-align: justify;
 }

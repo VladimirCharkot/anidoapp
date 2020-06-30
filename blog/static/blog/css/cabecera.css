@@ -5,6 +5,28 @@
     src: url("./letter-gothic-std/LetterGothicStd.otf");
 }
 
+@font-face {
+    font-family: "DM Mono";
+    src: url("./DM_Mono/DMMono-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-MediumItalic.otf");
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-Medium.otf");
+}
+
 
 * {
     margin:0;
