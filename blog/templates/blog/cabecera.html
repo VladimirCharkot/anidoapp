@@ -1,59 +1,48 @@
-<!-- Cabecera -->
-<!--<div id="cabecera">
 
-    <div id="titular">
-        <div id="nidito"><image source="/static/blog/nido.png" class="sizer" style="height: 120px;"></image></div>
-        <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
-    </div>
+<link href="/static/blog/css/cabecera.css" rel="stylesheet">
 
-    <div id="nav" class="nav"></div>
+<nav  id="menu">
+  <div id="nidito" class="logo">
+    <image source="/static/blog/imagenes/nido.png" class="sizer" style="height: 120px;"></image>
+  </div>
+  <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
 
-</div>-->
+  <ul>
+    <li><a id="nosotres" href="#">Nosotres</a>
+      <ul class="submenu" style="right: 280px;">
+        <li><a href="/nosotres/integrantes/">Integrantes</a></li>
+        <li><a href="/nosotres/nido/">El nido</a></li>
+      </ul>
+    </li>
+    <li><a id="proyectos" href="#">Proyectos</a>
+      <ul class="submenu" style="right: 180px;">
+        <li><a href="/proyectos/piirspec/">Piirspec</a></li>
+        <li><a href="/proyectos/piirspec/cam2019/">CAM-2019</a></li>
+        <li><a href="/proyectos/piirspec/craig/">Entrevista Craig</a></li>
+        <li><a href="/proyectos/cronicas/">Crónicas</a></li>
+      </ul>
+    </li>
+    <li><a id="contribuir" href="/contribuir/">Contribuir</a></li>
+    <li><a id="lecturas" href="/lecturas/">Lecturas</a></li>
+  </ul>
+ </nav>
 
+<script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        if (document.documentElement.scrollTop < 40){
+          console.log('Top');
+          document.querySelector('#menu').classList.remove('contraido');
+        }
+        else {
+          console.log('Notop');
+          document.querySelector('#menu').classList.add('contraido');
+        }
+      })
 
+      if (window.location.href.includes('nosotres')) document.querySelector('#nosotres').classList.add('seleccionado');
+      if (window.location.href.includes('proyectos')) document.querySelector('#proyectos').classList.add('seleccionado');
+      if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
+      if (window.location.href.includes('lecturas')) document.querySelector('#lecturas').classList.add('seleccionado');
 
-<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-
-  <span class="mdc-tab__content">
-    <span class="mdc-tab__text-label">Nosotres</span>
-  </span>
-
-  <span class="mdc-tab__content">
-    <span class="mdc-tab__text-label">Proyectos</span>
-  </span>
-
-  <!--<span class="mdc-tab-indicator">
-    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-  </span>-->
-
-  <span class="mdc-tab__ripple"></span>
-</button>
-
-
-<script>
-    const MDCTab = mdc.tab.MDCTab;
-    var tab = new MDCTab(document.querySelector('.mdc-tab'));
 </script>
 
-
-
-<!-- Tooltips y referencias -->
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script src="/static/blog/menu.js"></script>
-<script src="/static/blog/scroll.js"></script>
-
-<!--
-<head>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components- web@latest/dist/material-components-web.min.js"></script>
-</head>
-
-<button class="mdc-button foo-button">
-  <div class="mdc-button__ripple"></div>
-  <span class="mdc-button__label">Button</span>
-</button>
-
-<script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));</script>
-
--->

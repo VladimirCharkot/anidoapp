@@ -1,46 +1,26 @@
+<style>
 
-<!DOCTYPE html>
-<meta charset="utf-8" />
-<html>
-    <head>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 		
-		<link href="/static/blog/cabecera.css" rel="stylesheet">
-	        <link href="/static/blog/index.css" rel="stylesheet">
-		<link rel="icon" type="image/png" sizes="96x96" href="/static/blog/favicon.png">
-	 </head>
+    #proximamente {
+        position: absolute;
+        top: 300px;
+        /*grid-row: 3;*/
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+    }
 
-	<body>
-        
-        <div>
-            
-            <!-- Cabecera -->
-            <div id="cabecera">
-                
-                <div id="titular">
-                    <div id="nidito"><image source="/static/blog/nido.png" class="sizer" style="height: 120px;"></image></div>
-                    <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
-                </div>
-                
-                <div id="nav" class="nav"></div>
-                
-            </div> <!-- Cierra cabecera -->
-            
-            <!-- Tooltips y referencias -->
-            <script src="https://unpkg.com/@popperjs/core@2"></script>
-            <script src="https://unpkg.com/tippy.js@6"></script>
-            <script src="/static/blog/menu.js"></script>
-            <script src="/static/blog/scroll.js"></script>
-            
+    #img_anido{
+        margin: auto;
 
-            <div id="proximamente">
+        background-image: url(/static/blog/imagenes/anido.png);;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
-                <div id="img_anido"><image source="/static/blog/nido.png" class="sizer" style="height: 200px; width:500px; visibility: hidden;"></image></div>
+</style>
 
-            </div>
-            
-        </div>
-	
+<div id="proximamente">
 
-	</body>
-</html>
+    <div id="img_anido"><image source="/static/blog/imagenes/anido.png" class="sizer" style="height: 200px; width:500px; visibility: hidden;"></image></div>
+
+</div>

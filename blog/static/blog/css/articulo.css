@@ -1,0 +1,156 @@
+/* Texto */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.articulo > p, .footnote {
+    font-family: 'Jost', sans-serif;
+    padding: 1% 15% 1% 15%;
+    text-align: justify;
+}
+
+.cita{
+    font-family: letter-gothic-std, monospace;
+    padding: 7%;
+    background-color: #4b683b17;
+}
+
+.firma{
+    padding: 5% 5% 1% 70%;
+    font-size: 1em;
+    display: inline-block;
+    /*float: right;*/
+}
+
+
+#titulo{
+    background-image: var(--imagen_titulo);
+    background-blend-mode: color-dodge;
+    background-color: var(--imagen_titulo_color);
+    background-size: var(--imagen_titulo_size);
+    background-position: var(--imagen_titulo_pos);
+    margin-bottom: 3em;
+}
+
+h3{
+    background-image: var(--imagen_seccion);
+    background-blend-mode: color-dodge;
+    background-color: var(--imagen_seccion_color);
+    background-size: var(--imagen_seccion_size);
+    background-position: var(--imagen_seccion_pos);
+    font-family: 'DM Mono';
+    letter-spacing: 0.5vw;
+    padding: 4vw;
+    padding-right: 16vw;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h4{
+    background-image: var(--imagen_seccion);
+    background-blend-mode: color-dodge;
+    background-color: var(--imagen_seccion_color);
+    background-size: var(--imagen_seccion_size);
+    background-position: var(--imagen_seccion_pos);
+    font-family: 'DM Mono';
+    letter-spacing: 0.5vw;
+    text-align: right;
+    padding: 4vw;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.img_articulo{
+    padding: 5px 10%;
+    margin: 50px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color_filtro);
+    background-image: var(--origen);
+
+    filter: blur(1px) brightness(2);
+    background-blend-mode: luminosity;
+    
+}
+
+.sizer{
+    visibility: hidden;
+    width: 100%;
+}
+
+
+.despedida{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5% 15%;
+}
+
+.gracias{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Notas al pie */
+
+.footnote hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 3em 0;
+}
+
+.footnote ol{
+    list-style: none;
+}
+
+.footnote li{
+    padding: 0.5em;
+}
+
+.footnote p{
+    font-size: 0.8em;
+}
+
+.footnote-backref{
+    color: #04c1c1;
+}
+
+.footnote-backref:hover {
+    color: #1488ce;;
+}
+
+.footnote-ref{
+    text-decoration: none;
+}
+
+/* Medidas de pantalla de celular */
+
+/*
+@media (width < 1000px){
+    .texto_box { margin: 0px; }
+    .texto_box { font-size: 2em; }
+    .biblio-lista{ margin: 0 2%; }
+}*/
+
+
+@media only screen
+and (max-device-width: 800px){
+    /* Asegurarse de que en celular se entienda que las referencias son clickeables: */
+    .ref { color: blue; text-decoration: underline; }
+
+    /* Tamaño de fuente más grande */
+    .tippy-box[data-theme~='azure'] { font-size: 1.2rem }
+    
+    #agradecimientos{ font-size: 1.2rem; }
+    #agradecimientos{ font-size: 1.2rem; }
+    #equipo{ font-size: 1.2rem; }
+
+}
+
+
+

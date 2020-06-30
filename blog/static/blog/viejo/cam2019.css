@@ -1,0 +1,210 @@
+/* Texto */
+
+
+
+#titulo{
+    background-image: url(fotos/cam_3.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #fff8f1aa;
+    background-size: 200%;
+    background-position: center top;
+}
+
+
+.subtitulo{
+    background-image: url(fotos/cam_3.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #ffffffe0;
+    background-size: 200%;
+    background-position: top center;
+}
+
+
+.img_filtro{
+    padding: 5px 10%;
+    margin: 50px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    
+    background-color: #f7d9b2;
+    filter: blur(1px) brightness(2);
+    background-blend-mode: luminosity;
+    
+}
+
+.sizer{
+    visibility: hidden;
+    width: 100%;
+}
+
+#img_1{
+    background-image: url(fotos/cam_3.jpg);
+    margin: 0px
+}
+
+
+#img_2{
+    background-image: url(fotos/cam_2.jpg);
+}
+
+
+#img_3{
+    background-image: url(fotos/cam_4.jpg);
+}
+
+
+#img_4{
+    background-image: url(fotos/cam_6.jpg);
+}
+
+
+#img_5{
+    background-image: url(fotos/cam_1.jpg);
+}
+
+
+
+
+
+
+
+
+/* Tooltip referencias */
+
+.ref{
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    color: black;
+    max-width: 50vw;
+}
+
+.tippy-box[data-theme~='azure'] {
+    background-color: #f0fffffb;
+    border: solid 3px #BDDDF2;
+    padding: 4%;
+    /*max-width: 30vw;*/
+}
+.tippy-box[data-theme~='azure'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #BDDDF2;
+}
+.tippy-box[data-theme~='azure'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #BDDDF2;
+}
+
+.tippy-content {
+    width: auto;
+}
+
+
+
+/* Bibliografia */
+
+.biblio-notas{
+    text-align: right;
+    font-family: 'Jost';
+    font-size: 0.85em;
+    padding-top: 1%;
+    padding-left: 40%;
+    padding-right: 2%;
+    margin-bottom: 100px;
+}
+
+
+
+.biblio-lista{
+    font-family: 'DM Mono', monospace;
+    margin: 0 20%;
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+
+.biblio-item {
+    display:flex;
+    justify-content:flex-start;
+    padding:0.3rem 0;
+    order:0;
+}
+
+.biblio-item::before {  /* puntitos */
+    content:"";
+    display:block;
+    border-bottom:1px dotted black;
+    position:relative; top:-3px;
+    flex:1 1 auto;
+    margin:0 1rem;
+    order:1;
+}
+
+.biblio-item::after { /* autores */
+    content: attr(autor);
+    flex:0 0 auto;
+    order:2;
+    /*transform: scale(1.2);*/
+    text-decoration:underline;
+    max-width: 40%;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.biblio-descrip{
+    padding: 20px;
+}
+
+/* Efectos de la bibliografía... solo si hay :hover en el dispositivo */
+
+@media (any-hover: hover) {
+    .biblio-descrip{
+        max-height: 2ch;
+        font-size: 0.8em;
+        transform:scaleY(0.1);
+        transform-origin:center top;
+        transition:transform 0.2s, max-height 0.5s;
+    }
+    
+    .biblio-elem:hover .biblio-descrip {
+        max-height:20em;
+        transform:scaleY(1);
+    }
+    
+    .biblio-lista:hover > ul > .biblio-elem { opacity:0.3; }
+    
+    
+    .biblio-elem:hover {
+        transition:background-color 0.3s;
+        /*background:rgba(255,255,100,0.15);*/
+        background: #d7eac940;
+        opacity:1 !important;
+    }
+    
+}
+
+
+/* Medidas de pantalla de celular */
+
+/*
+@media (width < 1000px){
+    .texto_box { margin: 0px; }
+    .texto_box { font-size: 2em; }
+    .biblio-lista{ margin: 0 2%; }
+}*/
+
+
+@media only screen
+and (max-device-width: 800px){
+    .ref { color: blue; text-decoration: underline; }
+    .tippy-box[data-theme~='azure'] { font-size: 1.2rem }
+    
+    #agradecimientos{ font-size: 1.2rem; }
+    #agradecimientos{ font-size: 1.2rem; }
+    #equipo{ font-size: 1.2rem; }
+    
+    .biblio-lista{ margin: 2% 5%; }
+    .biblio-elem { padding: 2%; }
+}
+
+
+

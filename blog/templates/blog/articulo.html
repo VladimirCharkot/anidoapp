@@ -1,12 +1,23 @@
-<div id="contenido" style="--color_filtro: #c0d5f0ab; --imagen_seccion: url({{ contenido.imagen_titulo }});">
 
-    <div id="titulo" style="--imagen_titulo: url({{ contenido.imagen_titulo }}); --color_titulo: #5a7bd1ab;">
+<link href="/static/blog/css/articulo.css" rel="stylesheet">
+
+<div id="contenido" style="--color_filtro: #c0d5f0ab;
+                           --imagen_seccion: url({{ contenido.img_seccion.origen }});
+                           --imagen_seccion_color: {{ contenido.img_seccion.color }};
+                           --imagen_seccion_size: {{ contenido.img_seccion.size }};
+                           --imagen_seccion_pos: {{ contenido.img_seccion.pos }};">
+
+    <div id="titulo" style="--imagen_titulo: url({{ contenido.img_titulo.origen }});
+                            --imagen_titulo_color: {{ contenido.img_titulo.color }};
+                            --imagen_titulo_size: {{ contenido.img_titulo.size }};
+                            --imagen_titulo_pos: {{ contenido.img_titulo.pos }};">
+        <!--#5a7bd1ab; -->
 
         <h2>{{ contenido.titulo | safe }}</h2>
         {% if contenido.pdf %}
         <div id="descarga">
             <a href="{{ contenido.pdf.link }}" download="{{ contenido.pdf.nombre }}"><img id="descargar_pdf"
-                                                                                        src="/static/blog/pdf.svg"/></a>
+                                                                                        src="/static/blog/imagenes/pdf.svg"/></a>
         </div>
         {% endif %}
     </div>
@@ -21,12 +32,15 @@
     </div>
     {% endif %}
 
-    {{ contenido.html|safe }}
+    <div class="articulo">
+        {{ contenido.html|safe }}
+    </div>
 
     {% if extras %}
         {% for extra in extras %}
             {% include extra %}
         {% endfor %}
     {% endif %}
+
 
 </div>
