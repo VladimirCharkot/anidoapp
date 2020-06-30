@@ -183,6 +183,7 @@ h1 a{
     .submenu { flex-direction: column; }
     #menu ul li a { font-size: 1.5em; line-height: 12vw; }
     #menu { height: 15vw; }
+    #nidito {width: 14vw; height: 11vw;}
 }
 
 @media only screen
@@ -191,4 +192,5 @@ and (max-device-width: 800px){
     .submenu { flex-direction: column; }
     #menu ul li a { font-size: 1.5em; line-height: 12vw; }
     #menu { height: 15vw; }
+    #nidito { width: 14vw; height: 11vw; }
 }

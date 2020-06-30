@@ -140,13 +140,13 @@ h4{
 
 
 @media (width < 1140px){
-    .articulo > p, .footnote { padding: 1vw 2vw 1vw 2vw; }
+    .articulo > p, .footnote { padding: 1vw 5vw 1vw 5vw; }
     #contenido { margin: 0vw; }
 }
 
 @media only screen
 and (max-device-width: 800px){
-    .articulo > p, .footnote { padding: 1vw 2vw 1vw 2vw; }
+    .articulo > p, .footnote { padding: 1vw 5vw 1vw 5vw; }
     #contenido { margin: 0vw; }
 }
 
