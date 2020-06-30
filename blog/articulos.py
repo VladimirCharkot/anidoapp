@@ -159,7 +159,7 @@ craig_entrevista = {
 			'origen': '/static/blog/fotos/cam_4.jpg',
 			'size': '200%',
 			'pos': '90% 67%',
-			'color': '#5a7bd1ab'
+			'color': '#91b0ffab'
 		},
 		'md': 'blog/static/blog/textos/craig.md'
 	}
