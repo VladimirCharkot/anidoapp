@@ -112,9 +112,9 @@
 }
 
 h1{
-  letter-spacing: 2px;
-  font-size: 1.9rem;
-  display: inline;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  max-width: 30vw;
 }
 
 h1 a{
