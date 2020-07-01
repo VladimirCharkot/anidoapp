@@ -52,14 +52,16 @@
         const elems = ['#menu', '#nidito', '.submenu', '.articulo', 'body', '#titulo', '#contenido'];
 
         for (var i = 0; i < elems.length; i++){
-          var e = document.querySelector(elems[i]);
+          var ces = document.querySelectorAll(elems[i]);
 
           if (modo == "nocturno"){
-            e.classList.add("nocturno");
+            for (var j = 0; i < ces.length; j++)
+              ces[i].classList.add("nocturno");
           }
 
           if (modo == "diurno"){
-            e.classList.remove("nocturno");
+            for (var j = 0; i < ces.length; j++)
+              ces[i].classList.remove("nocturno");
           }
 
         }
