@@ -1,37 +1,50 @@
+
+
+
 #menu.nocturno{
-    background-color: rgba(138, 70, 70, 0.95);
-    border-bottom: 1px solid #343434;
+    background-color: black;
+    border-bottom: 1px solid #913600;
 }
 
 #menu.nocturno h1 a {
-    color: aliceblue;
+    color: white;
+}
+
+#menu.nocturno > ul li a {
+    color: white;
 }
 
 #nidito.nocturno{
-    background-color: cadetblue;
+    background-color: #b74400;
     background-blend-mode: color-burn;
 }
 
 .submenu.nocturno{
-    background-color: #b1b1b1;
+    background-color: #4a4a4a;
 }
 
-
-
 .articulo.nocturno {
-    background-color: #cececead;
-    color: #eee;
+    background-color: black;
+    color: #b74400;
 }
 
 body.nocturno {
-    background-color: #737373;
+    background-color: black;
 }
 
 #titulo.nocturno{
-    background-color: #241e1e78;
+    background-color: #26160cbf;
 }
 
 #contenido.nocturno{
-    background-color: #cececead;
+    background-color: black;
     color: aliceblue;
+}
+
+h3.nocturno{
+    background-color: #401800;
+}
+
+.img_articulo.nocturno{
+    background-color: #752b00;
 }

@@ -47,45 +47,36 @@
       if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
       if (window.location.href.includes('lecturas')) document.querySelector('#lecturas').classList.add('seleccionado');
 
-      function cambiar_modo(modo){
 
-        const elems = ['#menu', '#nidito', '.submenu', '.articulo', 'body', '#titulo', '#contenido'];
+
+
+
+      const skins = ['luminoso', 'acero', 'nocturno'];
+
+      function set_skin(skin){
+
+        const elems = ['#menu', '#nidito', '.submenu', '.articulo', '.img_articulo', 'body', '#titulo', '#contenido','h3'];
 
         for (var i = 0; i < elems.length; i++){
           var ces = document.querySelectorAll(elems[i]);
 
-          if (modo == "nocturno"){
-            for (var j = 0; j < ces.length; j++)
-              ces[j].classList.add("nocturno");
+          for (var j = 0; j < ces.length; j++){
+            for (var k = 0; k < skins.length; k++)
+              ces[j].classList.remove(skins[k]);
+            ces[j].classList.add(skin);
           }
-
-          if (modo == "diurno"){
-            for (var j = 0; j < ces.length; j++)
-              ces[j].classList.remove("nocturno");
-          }
-
         }
 
       }
 
 
-      window.modo = "diurno";
+      window.skin = 0;
 
       function cambiar_skin(){
-        console.log('Modo: ', window.modo);
 
-        if (window.modo == "diurno"){
-          cambiar_modo("nocturno");
-          window.modo = "nocturno";
-          return;
-        }
-
-
-        if (window.modo == "nocturno"){
-          cambiar_modo("diurno");
-          window.modo = "diurno";
-          return;
-        }
+          window.skin += 1;
+          console.log('Skin: ', window.skin);
+          set_skin(skins[window.skin % skins.length]);
 
       }
 
