@@ -3,7 +3,7 @@
 
 <nav  id="menu">
   <div id="titular">
-    <div id="nidito" class="logo">
+    <div id="nidito" class="logo" onclick="cambiar_skin()">
       <!--<image source="/static/blog/imagenes/nido.png" class="sizer" style="height: 120px;"></image>-->
     </div>
     <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
@@ -30,6 +30,7 @@
  </nav>
 
 <script type="text/javascript">
+
       window.addEventListener('scroll', function(){
         if (document.documentElement.scrollTop < 40){
           console.log('Top');
@@ -45,6 +46,47 @@
       if (window.location.href.includes('proyectos')) document.querySelector('#proyectos').classList.add('seleccionado');
       if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
       if (window.location.href.includes('lecturas')) document.querySelector('#lecturas').classList.add('seleccionado');
+
+      function cambiar_modo(modo){
+
+        const elems = ['#menu', '#nidito', '.submenu', '.articulo', 'body', '#titulo', '#contenido'];
+
+        for (var i = 0; i < elems.length; i++){
+          var e = document.querySelector(elems[i]);
+
+          if (modo == "nocturno"){
+            e.classList.add("nocturno");
+          }
+
+          if (modo == "diurno"){
+            e.classList.remove("nocturno");
+          }
+
+        }
+
+      }
+
+
+      window.modo = "diurno";
+
+      function cambiar_skin(){
+        console.log('Modo: ', window.modo);
+
+        if (window.modo == "diurno"){
+          cambiar_modo("nocturno");
+          window.modo = "nocturno";
+          return;
+        }
+
+
+        if (window.modo == "nocturno"){
+          cambiar_modo("diurno");
+          window.modo = "diurno";
+          return;
+        }
+
+      }
+
 
 </script>
 

@@ -1,0 +1,37 @@
+#menu.nocturno{
+    background-color: rgba(138, 70, 70, 0.95);
+    border-bottom: 1px solid #343434;
+}
+
+#menu.nocturno h1 a {
+    color: aliceblue;
+}
+
+#nidito.nocturno{
+    background-color: cadetblue;
+    background-blend-mode: color-burn;
+}
+
+.submenu.nocturno{
+    background-color: #b1b1b1;
+}
+
+
+
+.articulo.nocturno {
+    background-color: #cececead;
+    color: #eee;
+}
+
+body.nocturno {
+    background-color: #737373;
+}
+
+#titulo.nocturno{
+    background-color: #241e1e78;
+}
+
+#contenido.nocturno{
+    background-color: #cececead;
+    color: aliceblue;
+}
