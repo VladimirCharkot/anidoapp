@@ -4,6 +4,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .articulo > p, .footnote {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -32,6 +33,7 @@ html{
     background-size: var(--imagen_titulo_size);
     background-position: var(--imagen_titulo_pos);
     margin-bottom: 3em;
+    color: black;
 }
 
 h3{
@@ -46,6 +48,7 @@ h3{
     padding-right: 16vw;
     margin-top: 2em;
     margin-bottom: 1em;
+    color: black;
 }
 
 h4{
@@ -60,6 +63,7 @@ h4{
     padding: 4vw;
     margin-top: 3em;
     margin-bottom: 1em;
+    color: black;
 }
 
 .img_articulo{
