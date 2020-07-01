@@ -1,0 +1,194 @@
+/*@import url('letter-gothic-std');*/
+
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("./DM_Mono/DMMono-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-MediumItalic.ttf");
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("./Jost/static/Jost-Medium.ttf");
+}
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+#menu {
+  font-family: letter-gothic-std, monospace;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vw;
+  padding: 1vw 3vw;
+
+  box-sizing: border-box;
+  transition: .3s;
+  z-index: 99;
+  background: rgba(255,255,255,0.95);
+  /*background: linear-gradient(0deg, rgba(255,255,255,0.6), rgb(255, 255, 255));*/
+  border-bottom: 1px solid #f797a7;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#titular{
+    display: flex;
+}
+
+#menu.contraido{
+  height: 50px;
+}
+
+
+
+
+#menu.contraido .logo{
+  height: 2vw;
+  padding: 0;
+}
+
+
+
+
+
+#menu.contraido ul {
+  opacity: 0;
+  height: 20px;
+}
+
+#menu.contraido h1 {
+  opacity: 0;
+  font-size: 0em;
+}
+
+#menu .logo {
+  /*float: left;*/
+
+}
+
+#menu ul{
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: .3s;
+}
+
+#menu ul li {
+  list-style: none;
+}
+
+#menu ul li a {
+  line-height: 8vw;
+  color: #151515;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+#menu ul li a:focus{
+  outline: none;
+}
+
+#menu ul li a.seleccionado{
+  background: #E247;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.submenu{
+	 visibility: hidden;
+	 opacity: 0;
+	 position: absolute;
+	 padding-left: 0;
+	 right: 0;
+	 /*display: none;*/
+	 background: white;
+	 transition: .3s;
+
+	 display: flex;
+	 flex-direction: row;
+}
+
+#menu ul li:hover > ul, .submenu:hover {
+	 visibility: visible;
+	 opacity: 1;
+	 /*display: block;*/
+	 min-width: 20vw;
+	 text-align: left;
+	 padding-top: 1vw;
+	 box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+#menu ul li a:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+h1{
+  letter-spacing: 0.2em;
+  display: inline-block;
+  transition: .3s;
+}
+
+h1 a{
+  text-decoration: none;
+  line-height: 8.5vw;
+  color: black;
+  opacity: 1;
+  transition: .3s;
+}
+
+#nidito{
+    background-image: url(/static/blog/imagenes/nido.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: opacity(0.8);
+
+    margin: auto 0 auto 3vw;
+    width: 7vw;
+    height: 6vw;
+
+    margin-right: 3vw;
+    transition: .3s;
+}
+
+@media (width < 1140px){
+    h1 { visibility: hidden; width: 0em; }
+    .submenu { flex-direction: column; }
+    #menu ul li a { font-size: 1.5em; line-height: 12vw; }
+    #menu { height: 15vw; }
+}
+
+@media only screen
+and (max-device-width: 800px){
+    h1 { visibility: hidden; width: 0em; }
+    .submenu { flex-direction: column; }
+    #menu ul li a { font-size: 1.5em; line-height: 12vw; }
+    #menu { height: 15vw; }
+}

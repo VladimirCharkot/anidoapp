@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+
+
+#titulo{
+    background-image: url(fotos/clase.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #fff8f1aa;
+    background-size: cover;
+    background-position: left center;
+}
+
+#equipo {
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    
+    padding: 5%;
+    background-color: #fffaf5e0;
+    
+}
+
+.subtitulo{
+    background-image: url(fotos/clase.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #ffffffe0;
+    background-size: 200%;
+    background-position: top center;
+    border-top: 5px black;
+    font-size: 1.2rem;
+}
+
+
+
+.tippy-box[data-theme~='azure'] {
+    background-color: #f0fffffb;
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    color: black;
+    border: solid 3px #BDDDF2;
+    padding: 4%;
+}
+.tippy-box[data-theme~='azure'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #BDDDF2;
+}
+.tippy-box[data-theme~='azure'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #BDDDF2;
+}
+
+@media only screen
+and (max-device-width: 800px){
+    :root { font-size: 10px; }
+    .ref { color: blue; text-decoration: underline; }
+    .tippy-box[data-theme~='azure'] { font-size: 1.5rem }
+}
+
