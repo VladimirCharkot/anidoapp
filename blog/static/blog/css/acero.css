@@ -1,0 +1,36 @@
+
+#menu.acero{
+    background-color: rgba(138, 70, 70, 0.95);
+    border-bottom: 1px solid #343434;
+}
+
+#menu.acero h1 a {
+    color: aliceblue;
+}
+
+#nidito.acero{
+    background-color: cadetblue;
+    background-blend-mode: color-burn;
+}
+
+.submenu.acero{
+    background-color: #b1b1b1;
+}
+
+.articulo.acero {
+    background-color: #cececead;
+    color: #eee;
+}
+
+body.acero {
+    background-color: #737373;
+}
+
+#titulo.acero{
+    background-color: #241e1e78;
+}
+
+#contenido.acero{
+    background-color: #cececead;
+    color: aliceblue;
+}
