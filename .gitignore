@@ -5,3 +5,4 @@ anido_env/
 /static/admin/
 anido_test.db
 .idea
+**/migrations/

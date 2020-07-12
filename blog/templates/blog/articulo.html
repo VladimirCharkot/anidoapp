@@ -1,4 +1,9 @@
 
+<!--
+row.classList.add('revealed');
+row.scrollIntoView({behavior: 'smooth', block: 'center'});
+-->
+
 <link href="/static/blog/css/articulo.css" rel="stylesheet">
 
 <div id="contenido" style="--color_filtro: #c0d5f0ab;
@@ -36,8 +41,8 @@
         {{ contenido.html|safe }}
     </div>
 
-    {% if extras %}
-        {% for extra in extras %}
+    {% if contenido.extras %}
+        {% for extra in contenido.extras %}
             {% include extra %}
         {% endfor %}
     {% endif %}

@@ -13,6 +13,7 @@ Estudió computación e informática de 2008 a 2013. En 2014, poco después de i
 #### Contacto
 
 Escriba a colectivoanido@gmail.com, será prontamente atendido.
+
 Disponemos también de [página en facebook](https://www.facebook.com/Colectivo-A-Nido-110458554018959)
 
 <div class="firma-final">Colectivo A-Nido</div>

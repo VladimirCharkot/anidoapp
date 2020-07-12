@@ -1,0 +1,16 @@
+@media (width < 1140px){
+    h1 { visibility: hidden; width: 0em; }
+    .submenu { flex-direction: column; }
+    #menu li a { font-size: 1em; }
+    #barra { height: 15vw; }
+    #nidito {width: 14vw; height: 11vw;}
+}
+
+@media only screen
+and (max-device-width: 800px){
+    h1 { visibility: hidden; width: 0em; }
+    .submenu { flex-direction: column; }
+    #menu li a { font-size: 1.5em; line-height: 12vw; }
+    #barra { height: 15vw; }
+    #nidito { width: 14vw; height: 11vw; }
+}

@@ -5,7 +5,7 @@
     background-color: rgba(161, 108, 40, 0.3);
     border-radius: 20px;
     padding: 1vw;
-    
+
     width: min-content;
     position: absolute;
     bottom: 1vw;
@@ -26,8 +26,12 @@
     position: absolute;
     top: 10vw;     /* Lo que mide la cabecera */
     margin: 0 10% 0 10%;
-    background-color: #fff8f1ad;
     font-size: 1rem;
+
+    background-image: url(/static/blog/imagenes/textura_concreto.jpg);
+    background-size: contain;
+    background-blend-mode: color-burn;
+    background-color: #fff9f1d6;
 }
 
 
@@ -36,7 +40,7 @@
     font-family: 'DM Mono';
     letter-spacing: 0.5vw;
     position: relative;
-    
+
     font-size: 1.2em;
     text-align: center;
     padding: 10vw;
@@ -51,7 +55,7 @@
     padding-right: 16vw;
 }
 
-    
+
 #intro{
     font-family: 'Jost', sans-serif;
     text-align: center;

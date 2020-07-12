@@ -1,9 +1,9 @@
 
 <div style="text-align: right;" markdown="1" id="intro">
 
-Ese cosito que vuela,
+Libro que vuela,
 
-esas páginas con palabras que van pasando,
+páginas con palabras que van pasando,
 
 y quedando
 

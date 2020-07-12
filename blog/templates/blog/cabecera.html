@@ -1,85 +1,280 @@
-
 <link href="/static/blog/css/cabecera.css" rel="stylesheet">
 
-<nav  id="menu">
-  <div id="titular">
-    <div id="nidito" class="logo" onclick="cambiar_skin()">
-      <!--<image source="/static/blog/imagenes/nido.png" class="sizer" style="height: 120px;"></image>-->
-    </div>
-    <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
-  </div>
+<script>
 
-  <ul>
-    <li><a id="nosotres" href="#">Nosotres</a>
-      <ul class="submenu" style="right: 34vw;">
-        <li><a href="/nosotres/integrantes/">Integrantes</a></li>
-        <li><a href="/nosotres/nido/">El nido</a></li>
-      </ul>
-    </li>
-    <li><a id="proyectos" href="#">Proyectos</a>
-      <ul class="submenu" style="right: 22vw;">
-        <li><a href="/proyectos/piirspec/">Piirspec</a></li>
-        <li><a href="/proyectos/piirspec/cam2019/">CAM-2019</a></li>
-        <li><a href="/proyectos/piirspec/craig/">Entrevista Craig</a></li>
-        <li><a href="/proyectos/cronicas/">Crónicas</a></li>
-      </ul>
-    </li>
-    <li><a id="contribuir" href="/contribuir/">Contribuir</a></li>
-    <li><a id="lecturas" href="/lecturas/">Lecturas</a></li>
-  </ul>
- </nav>
+  function set_vistazo(o) {
+    var vistazo = o.closest('.submenu').querySelector(".vistazo");
+    var pie = vistazo.querySelector('p');
+    vistazo.style.backgroundImage = "url(" + o.getAttribute('data-img') + ")";
+    vistazo.style.backgroundSize = "125%";
+    pie.innerText = o.getAttribute('data-pie');
+    pie.style.transform = "translateX(0)";
+    pie.style.opacity = 1;
+  }
 
-<script type="text/javascript">
+  function reset_pie(o) {
+    var vistazo = o.closest('.submenu').querySelector(".vistazo");
+    var pie = o.closest('.submenu').querySelector(".vistazo p");
+    vistazo.style.backgroundSize = "120%";
+    pie.style.transform = "translateX(-3vw)";
+    pie.style.opacity = 0;
+  }
 
-      window.addEventListener('scroll', function(){
-        if (document.documentElement.scrollTop < 40){
-          console.log('Top');
-          document.querySelector('#menu').classList.remove('contraido');
-        }
-        else {
-          console.log('Notop');
-          document.querySelector('#menu').classList.add('contraido');
-        }
-      })
+  function set_subsubmenu(o){
+    var tid = o.getAttribute('data-target');
+    var subsubmenu = document.querySelector('#'+tid);
+    subsubmenu.style.visibility = 'visible';
+    subsubmenu.style.opacity = 1;
+  }
 
-      if (window.location.href.includes('nosotres')) document.querySelector('#nosotres').classList.add('seleccionado');
-      if (window.location.href.includes('proyectos')) document.querySelector('#proyectos').classList.add('seleccionado');
-      if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
-      if (window.location.href.includes('lecturas')) document.querySelector('#lecturas').classList.add('seleccionado');
-
-
-
-
-
-      const skins = ['luminoso', 'acero', 'nocturno'];
-
-      function set_skin(skin){
-
-        const elems = ['#menu', '#nidito', '.submenu', '.articulo', '.img_articulo', 'body', '#titulo', '#contenido','h3'];
-
-        for (var i = 0; i < elems.length; i++){
-          var ces = document.querySelectorAll(elems[i]);
-
-          for (var j = 0; j < ces.length; j++){
-            for (var k = 0; k < skins.length; k++)
-              ces[j].classList.remove(skins[k]);
-            ces[j].classList.add(skin);
-          }
-        }
-
-      }
-
-
-      window.skin = 0;
-
-      function cambiar_skin(){
-
-          window.skin += 1;
-          console.log('Skin: ', window.skin);
-          set_skin(skins[window.skin % skins.length]);
-
-      }
-
+  function hide_subsubmenus(o){
+    var v = o.closest('.submenu').querySelector(".vistazo");
+    var ssms = v.querySelectorAll('.subsubmenu');
+    for (var i=0; i < ssms.length; i++){
+      ssms[i].style.visibility = 'hidden';
+      ssms[i].style.opacity = 0;
+    }
+  }
 
 </script>
 
+
+
+<!----------------------------------------------------------------------->
+
+<!--
+
+Por hacer:
+[ ] - Vincular cabecera a posts (db)
+
+-->
+
+
+
+<nav id="barra">
+
+  <div id="titular">
+    <div id="nidito" class="logo" onclick="cambiar_skin()"></div>
+    <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
+  </div>
+
+
+
+  <ul id="menu">
+
+
+    <li><a id="nosotres" href="#">¿Qué es A-nido?</a>
+      <div class="submenu" style="right: 10vw;">
+        <div class="submenu_items">
+          <ul>
+            <li>
+              <a href="/nosotres/proyectos/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/carrito.jpg"
+                  data-pie="Propuestas de trabajo de A-nido">Los proyectos</a>
+            </li>
+
+            <li>
+              <a href="/nosotres/historia/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/historia.jpg"
+                  data-pie="La historia, los antecedentes... Alguito del camino andado">Historia</a>
+            </li>
+
+            <li>
+              <a href="/nosotres/nido/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/nido/12.jpeg"
+                  data-pie="El nidito de A-Nido">El nido</a>
+            </li>
+
+            <li>
+              <a href="/nosotres/integrantes/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/equipo.jpg"
+                  data-pie="Equipo de trabajo">Equipo de trabajo</a>
+            </li>
+
+            <li>
+              <a href="/nosotres/apoyo/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/apoyos.jpg"
+                  data-pie="No estamos solxs">Avales y apoyos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vistazo">
+          <p class="pie"></p>
+        </div>
+      </div>
+    </li>
+
+    <li><a id="proyectos" href="#">Proyectos</a>
+
+      <div class="submenu" style="right: 10vw;">
+
+        <div class="submenu_items">
+          <ul>
+
+            <!--"-->
+            <li class="subsubli" onmouseover="set_subsubmenu(this);" data-target="submenu_piirspec">
+              <a href="/piirspec/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/ronda.jpg"
+                 data-pie="Proyecto itinerante de investigación, registro y sistematización de prácticas educativas en el circo">PIIRSPEC</a>
+            </li>
+
+            <li onmouseover="hide_subsubmenus(this);">
+              <a href="/salita/"
+                 onmouseover="set_vistazo(this); hide_subsubmenus(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/libros-2.jpg"
+                 data-pie="Una pequeña sala de lectura itinerante">Sala de lectura</a>
+            </li>
+
+            <li onmouseover="hide_subsubmenus(this);">
+              <a href="/intervenciones/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/semaforo.jpg"
+                 data-pie="Intervenciones artísticas itinerantes">Intervenciones</a>
+            </li>
+
+            <!--<li><a href="/nidito/">Lectura</a>
+            </li>-->
+
+          </ul>
+        </div>
+
+        <div class="vistazo">
+
+          <ul class="subsubmenu" id="submenu_piirspec">
+
+            <a href="/piirspec/"
+                  onmouseover="set_vistazo(this);"
+                  onmouseout="reset_pie(this);"
+                  data-img="/static/blog/fotos/clase.jpg"
+                  data-pie="Proyecto itinerante de investigación, registro y sistematización de prácticas educativas en el circo">
+              <li>Presentación</li>
+            </a>
+
+            <a href="/piirspec/cam2019/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/cam19/cam_3.jpg"
+                 data-pie="Experiencia en la Convención Argentina de Malabares 2019">
+              <li>CAM-2019</li>
+            </a>
+
+            <a href="/piirspec/craig/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/cam19/cam_5.jpg"
+                 data-pie="Entrevista a Craig Quat en la CAM- 2019">
+              <li>Entrevista Craig</li>
+            </a>
+
+            <a href="/cronicas/1/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/moebius.jpg"
+                 data-pie="¡Nos mandaron a estudiar!">
+              <li>Crónicas I</li>
+            </a>
+
+          </ul>
+
+          <p class="pie"></p>
+
+        </div>
+
+      </div>
+
+    </li>
+
+    <li><a id="contribuir" href="/contribuir/">Contribuir</a></li>
+
+  </ul>
+</nav>
+
+
+
+<!----------------------------------------------------------------------->
+
+
+
+<script type="text/javascript">
+  set_vistazo(document.querySelector('a[data-img="/static/blog/fotos/carrito.jpg"]'));
+  set_vistazo(document.querySelector('a[data-img="/static/blog/fotos/ronda.jpg"]'));
+</script>
+
+
+
+
+<script type="text/javascript">
+  window.addEventListener('scroll', function() {
+    if (document.documentElement.scrollTop < 40) {
+      document.querySelector('#barra').classList.remove('contraido');
+    } else {
+      document.querySelector('#barra').classList.add('contraido');
+    }
+  })
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+  if (window.location.href.includes('nosotres')) document.querySelector('#nosotres').classList.add('seleccionado');
+
+  if (window.location.href.includes('piirspec') || window.location.href.includes('intervenciones') || window.location.href.includes('cronicas')) document.querySelector('#proyectos').classList.add('seleccionado');
+
+  if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
+
+</script>
+
+
+
+<script type="text/javascript">
+
+  const cookie = key=>(new RegExp(key+'=(.*?); ','gm')).exec(document.cookie+'; ')[1]
+
+  const skins = ['luminoso', 'acero', 'nocturno'];
+  const elems = ['#barra', '#nidito', '.submenu', '.articulo', '.img_articulo', 'body', '#titulo', '#contenido', 'h3', '.vistazo', '.subsubmenu', '.epigrafe','#img_anido'];
+
+  function set_skin(skin) {
+
+    console.log("Seteando skin a ", skin);
+    document.cookie = "skin=" + skin + ";samesite=true;max-age=" + 60*60*24; // Un día
+
+    for (var i = 0; i < elems.length; i++) {
+      var ces = document.querySelectorAll(elems[i]);
+
+      for (var j = 0; j < ces.length; j++) {
+        for (var k = 0; k < skins.length; k++)
+          ces[j].classList.remove(skins[k]);
+        ces[j].classList.add(skin);
+      }
+    }
+
+  }
+
+  function cambiar_skin() {
+
+    var skin_cambio = skins[(skins.indexOf(cookie('skin')) + 1) % skins.length];
+    console.log('Skin: ', cookie('skin'));
+    set_skin(skin_cambio);
+
+  }
+
+</script>
