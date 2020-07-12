@@ -33,7 +33,9 @@
     padding:0;
 }
 
-#menu {
+
+
+#barra {
   font-family: letter-gothic-std, monospace;
   position: fixed;
   top: 0;
@@ -46,49 +48,41 @@
   transition: .3s;
   z-index: 99;
   background: rgba(255,255,255,0.95);
-  /*background: linear-gradient(0deg, rgba(255,255,255,0.6), rgb(255, 255, 255));*/
   border-bottom: 1px solid #f797a7;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #titular{
     display: flex;
 }
 
-#menu.contraido{
+#barra.contraido{
   height: 50px;
 }
 
-
-
-
-#menu.contraido .logo{
+#barra.contraido .logo{
   height: 2vw;
   padding: 0;
 }
 
-
-
-
-
-#menu.contraido ul {
+#barra.contraido ul {
   opacity: 0;
   height: 20px;
 }
 
-#menu.contraido h1 {
+#barra.contraido h1 {
   opacity: 0;
   font-size: 0em;
 }
 
-#menu .logo {
-  /*float: left;*/
 
-}
 
-#menu ul{
+
+
+
+#menu{
   list-style: none;
   float: right;
   margin: 0;
@@ -97,11 +91,12 @@
   transition: .3s;
 }
 
-#menu ul li {
+
+#menu li {
   list-style: none;
 }
 
-#menu ul li a {
+#menu > li > a {
   line-height: 8vw;
   color: #151515;
   padding: 12px 30px;
@@ -110,15 +105,18 @@
   transition: .3s;
 }
 
-#menu ul li a:focus{
+#menu > li > a:focus{
   outline: none;
 }
 
-#menu ul li a.seleccionado{
+#menu > li > a.seleccionado{
   background: #E247;
   color: #fff;
   border-radius: 6px;
 }
+
+
+
 
 .submenu{
 	 visibility: hidden;
@@ -126,25 +124,133 @@
 	 position: absolute;
 	 padding-left: 0;
 	 right: 0;
-	 /*display: none;*/
 	 background: white;
 	 transition: .3s;
+   border: 1px solid gainsboro;
 
 	 display: flex;
 	 flex-direction: row;
+
+   min-height: 30vh;
 }
 
-#menu ul li:hover > ul, .submenu:hover {
+/* ul > li > a */
+.submenu_items{
+  max-width: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu_items > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.submenu_items > ul > li {
+  padding: 1vw;
+}
+
+.submenu_items > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #151515;
+  font-size: 0.8em;
+  transition: .3s;
+}
+
+/*.submenu_items > ul > li:hover ~ li > a{
+  color: gainsboro;
+}*/
+
+
+/*.submenu_items:hover > *:not(:hover) {
+ color: gainsboro;
+}*/
+
+
+.vistazo{
+  min-width: 35vw;
+  background-image: url(/static/blog/fotos/cam_1.jpg);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #d8d5ffd1;;
+  background-blend-mode: color-dodge;
+  box-shadow: 5px 3px 5px -1px #ccc;
+  transition: .3s;
+}
+
+.vistazo p{
+  font-family: 'letter-gothic-std', monospace;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffffe6;
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 0.7em;
+  transform: translateX(-3vw);
+  transition: .3s;
+  opacity: 0;
+  max-width: 15vw;
+}
+
+
+
+
+.subsubmenu{
+  visibility: hidden;
+  /*max-height: 0px;*/
+  opacity: 0;
+  transition: .3s;
+
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subsubmenu li{
+  padding: 1vw;
+  box-shadow: inset 15px 0px 10px 5px rgb(255, 255, 255);
+  background-color: #ffffff70;
+  max-width: 12vw;
+  padding-left: 1vw;
+}
+
+.subsubmenu a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #151515;
+  font-size: 0.7em;
+}
+
+/*.subsubli:hover > .subsubmenu{
+  visibility: visible;
+  opacity: 1;
+  max-height: 100vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+}*/
+
+
+
+
+
+
+#menu li:hover > .submenu, .submenu:hover {
 	 visibility: visible;
 	 opacity: 1;
-	 /*display: block;*/
 	 min-width: 20vw;
 	 text-align: left;
-	 padding-top: 1vw;
+	 /*padding-top: 1vw;*/
 	 box-shadow: 0px 3px 5px -1px #ccc;
 }
 
-#menu ul li a:hover .submenu{
+#menu li a:hover .submenu{
 	visibility: visible;
 	opacity: 1;
 }
@@ -178,19 +284,50 @@ h1 a{
     transition: .3s;
 }
 
-@media (width < 1140px){
-    h1 { visibility: hidden; width: 0em; }
-    .submenu { flex-direction: column; }
-    #menu ul li a { font-size: 1.5em; line-height: 12vw; }
-    #menu { height: 15vw; }
-    #nidito {width: 14vw; height: 11vw;}
+
+
+
+
+
+
+/*
+
+/*==================================================
+ * Sombra de página    https://css-tricks.com/almanac/properties/b/box-shadow/
+ * ===============================================
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
 
-@media only screen
-and (max-device-width: 800px){
-    h1 { visibility: hidden; width: 0em; }
-    .submenu { flex-direction: column; }
-    #menu ul li a { font-size: 1.5em; line-height: 12vw; }
-    #menu { height: 15vw; }
-    #nidito { width: 14vw; height: 11vw; }
-}
+*/

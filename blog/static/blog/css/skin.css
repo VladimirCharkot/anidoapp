@@ -1,0 +1,36 @@
+#menu.skin{
+    background-color: var(--menu-bg);
+    border-bottom: var(--menu-border);
+}
+
+#menu.skin h1 a {
+    color: var(--menu-font);
+}
+
+#nidito.skin{
+    background-color:
+    background-blend-mode: color-burn;
+    box-shadow: 0px 0px 3px 1px var(--nidito);
+}
+
+.submenu.skin{
+    background-color: var(--submenu-bg);
+}
+
+.articulo.skin {
+    background-color: var(--articulo-bg);
+    color: #eee;
+}
+
+body.skin {
+    background-color: var(--body-bg);
+}
+
+#titulo.skin{
+    background-color: var(--titu-filtro);
+}
+
+#contenido.skin{
+    background-color: var(--contenido-bg);
+    color: var(--contenido-font);
+}

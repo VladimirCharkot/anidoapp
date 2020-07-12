@@ -1,0 +1,48 @@
+{% extends "admin/base_site.html" %}
+{% block extrahead %}
+<style>
+  /*#container*/
+  body {
+    background-image: url(/static/blog/imagenes/nidos_y_huevos.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-color: #3e576cd9;
+    background-blend-mode: color-dodge;
+  }
+
+  #header {
+    background-color: #905741;
+    /*color: #ffeebc;*/
+  }
+
+  .module caption {
+    background-color: #905741;
+  }
+
+  .module table {
+    background-color: #f5f2dc85;
+  }
+
+  a:link,
+  a:visited {
+    color: #4a460b;
+  }
+
+  div.breadcrumbs {
+    color: #90B5C3;
+    background: #411200;
+    font-size: 11px;
+    padding: 5px 40px;
+  }
+
+  #branding h1,
+  #branding h1 a:link,
+  #branding h1 a:visited {
+    color: #fff5c0;
+  }
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">El nidito virtual</a></h1>
+{% endblock %}

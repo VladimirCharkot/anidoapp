@@ -65,7 +65,7 @@ Tomamos como marco de referencia, el concepto de investigación - acción defini
 > <span class="firma">— John Elliott [^1]</span>
 { .cita }
 
-[^1]: ELLIOTT John. “La investigación-acción en educación”. Ediciones Morata, S. L. Primera edición: 1990.pág 5
+[^1]: <sup>1</sup> ELLIOTT John. “La investigación-acción en educación”. Ediciones Morata, S. L. Primera edición: 1990.pág 5
 
 Nos proponemos entonces para escribir dichos guiones… ser los lentes que colaboren en revisar cuáles son las prácticas docentes vigentes en las escuelas de circo de Sudamerica. Los aportes de la pedagogía estarán centrados en interrogar la naturaleza de los procesos educativos que allí tienen lugar. Desde los pedagogos Furlán y Pasillas se entiende que:
 
@@ -73,7 +73,7 @@ Nos proponemos entonces para escribir dichos guiones… ser los lentes que colab
 > <span class="firma">— Alfredo Furlán y Miguel A. Pasillas [^2]</span>
 { .cita }
 >
-[^2]: FURLÁN A. Y PASILLAS M. A. “El campo pedagógico”. Legitimidad de la Intervención pedagógica. Universidad de Colima. (S/F) Pág. 13
+[^2]: <sup>2</sup> FURLÁN A. Y PASILLAS M. A. “El campo pedagógico”. Legitimidad de la Intervención pedagógica. Universidad de Colima. (S/F) Pág. 13
 
 
 En suma a ello, reconocemos la mirada del pedagogo centrada también, en retomar los aportes y contribuciones de las prácticas educativas vigentes y dispuesta a valorar los esfuerzos y acciones de quienes son parte a diario de las escuelas de circo.
@@ -87,14 +87,14 @@ La observación, registro y documentación de prácticas docentes es un trabajo 
 Interesa destacar que no se entiende la teoría escindida de la práctica. Es por ello que aludimos a la idea de tramas, en tanto supone múltiples procesos que se combinan para reflexionar permanentemente sobre la complejidad que implica actuar “desde, en y para”: desde las condiciones de existencia, en lo casuístico y para enriquecer un proceso educativo. Al respecto Feldman plantea:
 
 
-[^3]: NICASTRO S. y ANDREOZZI M.: Asesoramiento pedagógico en acción. La novela del asesor”. Cap. 1: El trabajo de asesoramiento.  Paidós. Buenos Aires. 2003. p. 30. Las autoras trabajan la noción de intertextualidad refiriéndose a: “un conjunto de relatos, historias, novelas que se entraman y entrecruzan en cada situación de manera particular”.
-[^4]: ARDOINO, J. en NICASTRO, S. en “Trabajar de director...o sobre un hacer en situación”. Revista Novedades Educativas Nº 159. Centro de Publicaciones Educativas y Material Didáctico. Bs. As. 2004.
+[^3]: <sup>3</sup> NICASTRO S. y ANDREOZZI M.: Asesoramiento pedagógico en acción. La novela del asesor”. Cap. 1: El trabajo de asesoramiento.  Paidós. Buenos Aires. 2003. p. 30. Las autoras trabajan la noción de intertextualidad refiriéndose a: “un conjunto de relatos, historias, novelas que se entraman y entrecruzan en cada situación de manera particular”.
+[^4]: <sup>4</sup> ARDOINO, J. en NICASTRO, S. en “Trabajar de director...o sobre un hacer en situación”. Revista Novedades Educativas Nº 159. Centro de Publicaciones Educativas y Material Didáctico. Bs. As. 2004.
 
 >«Quizás el mejor ensamble entre conocimiento y acción provenga de formas de indagación propias de las diferentes formas prácticas profesionales. Estas prácticas generan conocimiento ‘en el caso’ sin constituir, en sentido estricto, investigación profesional y solo pueden ser llamadas ‘investigación’ en sentido amplio por su carácter sistemático y su búsqueda de rigurosidad en un contexto de actividad y de resolución de problemas.»
 > <span class="firma">— Daniel Feldman[^5]</span>
 { .cita }
 
-[^5]: FELDMAN, D. “Enseñanza y escuela”. Cap. 4: Relaciones entre conocimiento y acción. Paidós. Buenos Aires. 2010. P. 96',
+[^5]: <sup>5</sup> FELDMAN, D. “Enseñanza y escuela”. Cap. 4: Relaciones entre conocimiento y acción. Paidós. Buenos Aires. 2010. P. 96',
 
 En suma, este proyecto de investigación se caracteriza por ser una práctica social compleja, no lineal, atravesada por las historias particulares de los sujetos; es situado en un espacio y tiempo y a la vez transversal. Es cíclica e interactiva en cuanto trabaja con otros. Intenta penetrar al fondo de los sentidos y cuestionar para qué se hace lo que se hace (pues ese “paraqué” deja entrever lo realmente se está haciendo con lo que se hace), cuáles son las decisiones que se toman para llegar a tal punto de trabajo educativo… Busca revisar las prácticas para identificar los puntos “flacos” y pensar, desde allí, estrategias de intervención que colaboren en fortalecer y mejorar los procesos.
 
