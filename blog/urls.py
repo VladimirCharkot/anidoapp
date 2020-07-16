@@ -36,3 +36,6 @@ urlpatterns = [
 
     path('test/', views.pagina, {'articulo': 'CAM 2019'})
 ]
+
+
+# HOLA JERE 
