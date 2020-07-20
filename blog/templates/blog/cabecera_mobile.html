@@ -1,0 +1,153 @@
+<link href="/static/blog/css/cabecera.css" rel="stylesheet">
+<link href="/static/blog/css/menu_mobile.css" rel="stylesheet">
+
+<script>
+  function abrir_menu(){
+    let mb = document.querySelector("#menu_box");
+    if (mb.classList.contains("abierta")){
+      mb.classList.remove("abierta");
+    }else{
+      mb.classList.add("abierta");
+    }
+
+    console.log("Abrir menu");
+  }
+
+</script>
+
+
+<div id="barra">
+
+  <div id="titular">
+    <div id="nidito" class="logo" onclick="cambiar_skin()"></div>
+    <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
+  </div>
+
+  <div id="menu_btn" onclick="abrir_menu()">
+    <img src="/static/blog/imagenes/menu.webp" alt="menu">
+  </div>
+
+</div>
+
+
+<nav id="menu_box">
+
+  <ul id="menu">
+
+    <li><a id="contribuir" href="/contribuir/">Contribuir</a></li>
+
+    <li><a id="nosotres" href="#">¿Qué es A-nido?</a>
+      <div class="submenu">
+
+          <ul>
+            <li><a href="/nosotres/proyectos/">Los proyectos</a></li>
+            <li><a href="/nosotres/historia/">Historia</a></li>
+            <li><a href="/nosotres/nido/">El nido</a></li>
+            <li><a href="/nosotres/integrantes/">Equipo de trabajo</a></li>
+            <li><a href="/nosotres/apoyo/">Avales y apoyos</a></li>
+          </ul>
+
+      </div>
+    </li>
+
+    <li><a id="proyectos" href="#">Proyectos</a>
+
+      <div class="submenu">
+
+          <ul>
+
+            <!--"-->
+            <li class="subsubli">
+              <a href="/piirspec/">PIIRSPEC</a>
+
+              <ul class="subsubmenu" id="submenu_piirspec">
+                <a href="/piirspec/">
+                  <li>Presentación</li>
+                </a>
+                <a href="/piirspec/cam2019/">
+                  <li>CAM-2019</li>
+                </a>
+                <a href="/piirspec/craig/">
+                  <li>Entrevista Craig</li>
+                </a>
+                <a href="/cronicas/1/">
+                  <li>Crónicas I</li>
+                </a>
+              </ul>
+
+            </li>
+
+            <li><a href="/salita/">Sala de lectura</a></li>
+
+            <li><a href="/intervenciones/">Intervenciones</a></li>
+
+          </ul>
+      </div>
+
+    </li>
+
+  </ul>
+</nav>
+
+
+
+<!----------------------------------------------------------------------->
+
+
+<script type="text/javascript">
+  window.addEventListener('scroll', function() {
+    if (document.documentElement.scrollTop < 40) {
+      document.querySelector('#barra').classList.remove('contraido');
+    } else {
+      document.querySelector('#barra').classList.add('contraido');
+    }
+  })
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  if (window.location.href.includes('nosotres')) document.querySelector('#nosotres').classList.add('seleccionado');
+
+  if (window.location.href.includes('piirspec') || window.location.href.includes('intervenciones') || window.location.href.includes('cronicas')) document.querySelector('#proyectos').classList.add('seleccionado');
+
+  if (window.location.href.includes('contribuir')) document.querySelector('#contribuir').classList.add('seleccionado');
+</script>
+
+
+
+<script type="text/javascript">
+  const cookie = key => (new RegExp(key + '=(.*?); ', 'gm')).exec(document.cookie + '; ')[1]
+
+  const skins = ['luminoso', 'acero', 'nocturno'];
+  const elems = ['#barra', '#nidito', '.submenu', '.articulo', '.img_articulo', 'body', '#titulo', '#contenido', 'h3', '.vistazo', '.subsubmenu', '.epigrafe', '#img_anido'];
+
+  function set_skin(skin) {
+
+    console.log("Seteando skin a ", skin);
+    document.cookie = "skin=" + skin + ";samesite=true;max-age=" + 60 * 60 * 24; // Un día
+
+    for (var i = 0; i < elems.length; i++) {
+      var ces = document.querySelectorAll(elems[i]);
+
+      for (var j = 0; j < ces.length; j++) {
+        for (var k = 0; k < skins.length; k++)
+          ces[j].classList.remove(skins[k]);
+        ces[j].classList.add(skin);
+      }
+    }
+
+  }
+
+  function cambiar_skin() {
+
+    var skin_cambio = skins[(skins.indexOf(cookie('skin')) + 1) % skins.length];
+    console.log('Skin: ', cookie('skin'));
+    set_skin(skin_cambio);
+
+  }
+</script>
