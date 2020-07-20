@@ -48,7 +48,10 @@
 #menu a {
   text-decoration: none;
   color: #2c2c2c;
-  font-family: 'letter-gothic-std', monospace;
+  /*font-family: 'letter-gothic-std', monospace;*/
+  font-family: 'Jost', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
   padding: 1vw;
 }
 
