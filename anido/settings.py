@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['127.0.0.1','localhost','162.243.162.53','.colectivoanido.com']
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'django_user_agents',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django_user_agents.middleware.UserAgentMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

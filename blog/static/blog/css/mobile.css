@@ -1,7 +1,7 @@
 @media (width < 1140px){
     h1 { visibility: hidden; width: 0em; }
     .submenu { flex-direction: column; }
-    #menu li a { font-size: 1em; }
+    #menu li a { font-size: 1em; line-height: 3vw; }
     #barra { height: 15vw; }
     #nidito {width: 14vw; height: 11vw;}
 }
@@ -10,7 +10,7 @@
 and (max-device-width: 800px){
     h1 { visibility: hidden; width: 0em; }
     .submenu { flex-direction: column; }
-    #menu li a { font-size: 1.5em; line-height: 12vw; }
+    #menu li a { font-size: 1em; line-height: 3vw; }
     #barra { height: 15vw; }
     #nidito { width: 14vw; height: 11vw; }
 }
