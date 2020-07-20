@@ -13,7 +13,7 @@ from scripts.mdext.mdext import MDExt
 from .articulos import *
 
 # Check user_agent
-from django_user_agents.utils import get_user_agent
+#from django_user_agents.utils import get_user_agent
 
 
 def en_construccion(request):
@@ -151,11 +151,13 @@ def pagina(request, articulo):
 #background-position: 20% 0%;
 
 def render_articulo(request, articulo):
-    user_agent = get_user_agent(request)
-    if user_agent.is_mobile:
-        logging.info("Mobile")
-    else:
-        logging.info("No mobile")
+#    user_agent = get_user_agent(request)
+#    if user_agent.is_mobile:
+#        logging.info("Mobile")
+#    else:
+#        logging.info("No mobile")
+    logging.info("Pimba")
+
     contenido = open(articulo['contenido']['md'],'r',encoding='utf8').read()
     contenido_html = md.markdown(contenido, extensions=[MDExt(), 'extra', 'smarty'])
     articulo['contenido']['html'] = contenido_html
