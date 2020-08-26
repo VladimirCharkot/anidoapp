@@ -1,0 +1,72 @@
+
+
+
+#barra.nocturno{
+    background-color: black;
+    border-bottom: 1px solid #913600;
+}
+
+#barra.nocturno h1 a {
+    color: white;
+}
+
+#barra.nocturno > ul li a {
+    color: white;
+}
+
+#nidito.nocturno{
+    background-color: #b74400;
+    background-blend-mode: color-burn;
+    box-shadow: 0px 0px 3px 1px #b74400;
+}
+
+.submenu.nocturno{
+    background-color: #4a4a4a;
+}
+
+.articulo.nocturno {
+    background-color: black;
+    color: #b74400;
+}
+
+body.nocturno {
+    background-color: black;
+}
+
+#titulo.nocturno{
+    background-color: #26160cbf;
+}
+
+#contenido.nocturno{
+    background-color: black;
+    color: aliceblue;
+}
+
+h3.nocturno{
+    background-color: #401800;
+}
+
+.img_articulo.nocturno{
+    background-color: #752b00;
+}
+
+.vistazo.nocturno{
+  background-color: #26160cbf;
+  color: black;
+}
+
+.subsubmenu.nocturno li{
+  color: black;
+  box-shadow: inset 15px 0px 10px 5px rgb(244, 239, 228);
+  background-color: #dcdcdccf;
+}
+
+.epigrafe.nocturno{
+  background-color: #000000b3;
+}
+
+#img_anido.nocturno {
+  box-shadow: inset 0px 0px 10px 10px black;
+  background-color: #913600;
+  background-blend-mode: color-burn;
+}

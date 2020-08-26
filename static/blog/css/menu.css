@@ -1,0 +1,180 @@
+
+#menu{
+  float: right;
+  display: flex;
+  transition: .3s;
+  align-items: center;
+}
+
+#menu li {
+  list-style: none;
+}
+
+#menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+#menu > li > a {
+  color: #151515;
+  padding: 1vw 3vw;;
+}
+
+#menu > li > a:focus{
+  outline: none;
+}
+
+#menu > li > a.seleccionado{
+  background: #E247;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+
+
+.submenu{
+	 visibility: hidden;
+	 opacity: 0;
+
+	 position: absolute;
+	 padding-left: 0;
+	 right: 0;
+
+	 background: white;
+   border: 1px solid gainsboro;
+
+	 display: flex;
+	 flex-direction: row;
+
+   min-height: 30vh;
+   /*transition: .3s;*/
+}
+
+
+.submenu_items{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu_items > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.submenu_items > ul > li {
+  padding: 1vw;
+}
+
+.submenu_items > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #151515;
+  font-size: 0.8em;
+  transition: .3s;
+}
+
+/*.submenu_items > ul > li:hover ~ li > a{
+  color: gainsboro;
+}*/
+
+
+/*.submenu_items:hover > *:not(:hover) {
+ color: gainsboro;
+}*/
+
+
+
+
+.subsubmenu{
+  visibility: hidden;
+  /*max-height: 0px;*/
+  opacity: 0;
+  transition: .3s;
+
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subsubmenu li{
+  padding: 1vw;
+  box-shadow: inset 15px 0px 10px 5px rgb(255, 255, 255);
+  background-color: #ffffff70;
+  max-width: 12vw;
+  padding-left: 1vw;
+
+  margin: 1vw;
+  margin-left: 0vw;
+}
+
+.subsubmenu a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #151515;
+  font-size: 0.7em;
+}
+
+/*.subsubli:hover > .subsubmenu{
+  visibility: visible;
+  opacity: 1;
+  max-height: 100vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+}*/
+
+
+
+
+.vistazo{
+  min-width: 35vw;
+  background-image: url(/static/blog/fotos/cam_1.jpg);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #d8d5ffd1;;
+  background-blend-mode: color-dodge;
+  box-shadow: 5px 3px 5px -1px #ccc;
+  transition: .3s;
+}
+
+.vistazo p{
+  font-family: 'letter-gothic-std', monospace;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffffe6;
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 0.7em;
+  transform: translateX(-3vw);
+  transition: .3s;
+  opacity: 0;
+  max-width: 15vw;
+}
+
+
+
+
+
+#menu li:hover > .submenu, .submenu:hover {
+	 visibility: visible;
+	 opacity: 1;
+	 min-width: 20vw;
+	 text-align: left;
+	 /*padding-top: 1vw;*/
+	 box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+#menu li a:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
