@@ -427,12 +427,11 @@ GRACIAS, GRACIAS, GRACIAS
 
 <div class="final">
   <p>Agosto 2020</p>
-  <p class="nombre">María Eugenia Peirone. Prof. y Lic. en Ciencias de la Educación</p>
-  <p class="nombre">Sebastián Rojo. Docente y Artista de Circo. Malabarista</p>
-  <p class="nombre">Vladimir Charkot. Colaborador del proyecto. Docente y malabarista</p>
+  <p>María Eugenia Peirone. Prof. y Lic. en Ciencias de la Educación</p>
+  <p>Sebastián Rojo. Docente y Artista de Circo. Malabarista</p>
+  <p>Vladimir Charkot. Colaborador del proyecto. Docente y malabarista</p>
 
-  <p>COLECTIVO A –NIDO<p>
-  <p>Investigación educativa.</p>
+  <p class="nombre">Colectivo A–Nido — Investigación educativa.<p>
 </div>
 
 <div id="fb2" class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>

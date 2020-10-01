@@ -17,6 +17,7 @@ p, .footnote {
   padding: 7%;
   background-color: #4b683b17;
   text-align: right;
+  font-size: 0.85rem;
 }
 
 .firma{
@@ -137,7 +138,7 @@ h6{
 }
 
 .nombre{
-
+  font-family: letter-gothic-std, monospace;
 }
 
 
