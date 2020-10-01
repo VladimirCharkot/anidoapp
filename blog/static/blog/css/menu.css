@@ -105,14 +105,29 @@
 }
 
 .subsubmenu li{
-  padding: 1vw;
+  padding: 0.5vw;
   box-shadow: inset 15px 0px 10px 5px rgb(255, 255, 255);
   background-color: #ffffff70;
   max-width: 12vw;
   padding-left: 1vw;
 
+  margin: 0.5vw;
+  margin-left: 0vw;
+}
+
+/* .subsubmenu li:hover{
+  border: 1px solid gainsboro;
+} */
+
+#submenu_piirspec a:first-child{
+  font-size: 1em;
+  /* padding: 1vw; */
   margin: 1vw;
   margin-left: 0vw;
+}
+
+#submenu_piirspec a:first-child li{
+  box-shadow: 5px 3px 5px -1px #ccc;
 }
 
 .subsubmenu a{
