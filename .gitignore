@@ -7,5 +7,3 @@ anido_env/
 anido_test.db
 .idea
 **/migrations/
-/static/
-/blog/static/
