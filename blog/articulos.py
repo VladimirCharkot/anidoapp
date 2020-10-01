@@ -304,3 +304,39 @@ contrib = {
 		'md': 'blog/static/blog/textos/contribuir.md'
 	}
 }
+
+
+
+
+
+
+charlas_arena = {
+	'clase': 'blog/articulo.html',
+	'titulo': 'Charlas Arena',
+
+	'contenido': {
+		'titulo': 'Sistematización del Ciclo de Entrevistas “Enseñando a aprender, aprender a enseñar”',
+
+		'img_titulo': {
+			'origen': '/static/blog/fotos/arena.png',
+			'size': '100%',
+			'pos': 'center 25%',
+			'color': '#97b2f7'
+		},
+
+		'img_seccion': {
+			'origen': '/static/blog/fotos/arena.png',
+			'size': '100%',
+			'pos': 'center 25%',
+			'color': '#ffffffe0'
+		},
+
+		'pdf': {
+			'link': '/static/blog/pdf/arena.pdf',
+			'nombre': 'Proyecto A-Nido - Análisis Enseñando a aprender, aprender a enseñar (La Arena).pdf'
+		},
+
+		'intro': 'Colectivo A-Nido — para La Arena Circo',
+		'md': 'blog/static/blog/textos/arena.md'
+	}
+}

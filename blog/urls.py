@@ -15,6 +15,7 @@ urlpatterns = [
     path('piirspec/', views.piirspec),
     path('piirspec/cam2019/', views.cam19),
     path('piirspec/craig/', views.craig),
+    path('piirspec/arena/', views.arena),
 
     path('cronicas/1/', views.cronica_1),
 
@@ -38,4 +39,4 @@ urlpatterns = [
 ]
 
 
-# HOLA JERE 
+# HOLA JERE

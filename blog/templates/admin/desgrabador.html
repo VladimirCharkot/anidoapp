@@ -1,0 +1,22 @@
+<script src='http://wzrd.in/standalone/peaks.js' type='text/javascript'>
+
+  <div id="peaks-container">
+    <div id="zoomview-container"></div>
+    <div id="overview-container"></div>
+  </div>
+
+  <audio>
+    <source src="test_data/sample.mp3" type="audio/mpeg">
+    <source src="test_data/sample.ogg" type="audio/ogg">
+  </audio>
+  <script>
+    (function(Peaks) {
+      const options = { ... };
+
+
+
+      Peaks.init(options, function(err, peaks) {
+        // ...
+      });
+    })(peaks);
+  </script>

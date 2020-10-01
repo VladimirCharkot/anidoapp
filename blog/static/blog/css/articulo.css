@@ -19,7 +19,7 @@ p, .footnote {
 }
 
 .firma{
-    padding: 5% 5% 1% 70%;
+    padding: 5% 5% 1% 60%;
     font-size: 1em;
     display: inline-block;
     /*float: right;*/
@@ -40,34 +40,51 @@ img{
     color: black;
 }
 
+
+h3, h4, h5, h6{
+  background-image: var(--imagen_seccion);
+  background-blend-mode: color-dodge;
+  background-color: var(--imagen_seccion_color);
+  background-size: var(--imagen_seccion_size);
+  background-position: var(--imagen_seccion_pos);
+  font-family: 'DM Mono';
+  letter-spacing: 0.5vw;
+  color: black;
+}
+
 h3{
-    background-image: var(--imagen_seccion);
-    background-blend-mode: color-dodge;
-    background-color: var(--imagen_seccion_color);
-    background-size: var(--imagen_seccion_size);
-    background-position: var(--imagen_seccion_pos);
-    font-family: 'DM Mono';
-    letter-spacing: 0.5vw;
     padding: 4vw;
     padding-right: 16vw;
     margin-top: 2em;
     margin-bottom: 1em;
-    color: black;
 }
 
 h4{
-    background-image: var(--imagen_seccion);
-    background-blend-mode: color-dodge;
-    background-color: var(--imagen_seccion_color);
-    background-size: var(--imagen_seccion_size);
-    background-position: var(--imagen_seccion_pos);
-    font-family: 'DM Mono';
     letter-spacing: 0.5vw;
-    text-align: right;
+    /* text-align: right; */
     padding: 4vw;
     margin-top: 3em;
-    margin-bottom: 1em;
-    color: black;
+    margin-bottom: 1em
+    font-size: 1.5em;
+}
+
+h5{
+  letter-spacing: 0.5vw;
+  /* text-align: right; */
+  padding: 2vw 5vw;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+h6{
+  letter-spacing: 0.2vw;
+  /* text-align: right; */
+  padding: 1vw 6vw;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: black;
+  font-size: 0.9em;
 }
 
 .img_articulo{
@@ -103,6 +120,20 @@ h4{
     font-size: 1.8em;
     font-weight: bold;
     text-align: center;
+}
+
+
+.final *{
+  text-align: right;
+}
+
+.final p{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.nombre{
+
 }
 
 

@@ -60,6 +60,9 @@ def cam19(request):
 def craig(request):
     return render_articulo(request, craig_entrevista)
 
+def arena(request):
+    return render_articulo(request, charlas_arena)
+
 
 def cronica_1(request):
     return render_articulo(request, a_estudiar)
@@ -151,12 +154,6 @@ def pagina(request, articulo):
 #background-position: 20% 0%;
 
 def render_articulo(request, articulo):
-    # user_agent = get_user_agent(request)
-    # if user_agent.is_mobile:
-    #     logging.info("Mobile")
-    # else:
-    #     logging.info("No mobile")
-    # logging.info("Pimba")
 
     contenido = open(articulo['contenido']['md'],'r',encoding='utf8').read()
     contenido_html = md.markdown(contenido, extensions=[MDExt(), 'extra', 'smarty'])
@@ -164,3 +161,7 @@ def render_articulo(request, articulo):
     resp = render(request, "blog/pag.html", context=articulo)
     resp.set_cookie('skin', request.COOKIES.get('skin', 'luminoso'))
     return resp
+
+
+
+# https://github.com/bbc/peaks.js

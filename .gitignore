@@ -1,3 +1,4 @@
+**.mp3
 anido_env/
 **/__pycache__
 **/__init__.py
@@ -6,3 +7,5 @@ anido_env/
 anido_test.db
 .idea
 **/migrations/
+/static/
+/blog/static/
