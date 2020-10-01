@@ -14,7 +14,7 @@ p, .footnote {
 
 .cita{
   font-family: letter-gothic-std, monospace;
-  padding: 7%;
+  padding: 3% 25%;
   background-color: #4b683b17;
   text-align: right;
   font-size: 0.85rem;
@@ -57,7 +57,7 @@ h3, h4, h5{
 }
 
 h3{
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 4vw;
   padding-right: 16vw;
   margin-top: 2em;
@@ -67,16 +67,16 @@ h3{
 h4{
   letter-spacing: 0.5vw;
   /* text-align: right; */
-  padding: 4vw;
+  padding: 2vw;
   margin-top: 3em;
   margin-bottom: 1em;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 h5{
   letter-spacing: 0.5vw;
   /* text-align: right; */
-  padding: 2vw 5vw;
+  padding: 1vw 5vw;
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-size: 1.3em;

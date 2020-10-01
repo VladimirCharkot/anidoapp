@@ -43,11 +43,19 @@
   visibility: hidden;
 }
 
+#titulo{
+  margin-bottom: 1em;
+}
+
+#intro{
+  font-size: 2em;
+  padding: 2vw;
+  margin-bottom: 0;
+}
+
 </style>
 
 <div id="fb1" class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
-
-<div style="height: 0; backgound-image: url(/static/blog/fotos/arena.png)"><img style='visibility:hidden;' alt='Pantalla del zoom' src='/static/blog/fotos/arena.png'></img></div>
 
 <div>
   <meta property="og:url" content="https://www.colectivoanido.com/piirspec/arena/" />
