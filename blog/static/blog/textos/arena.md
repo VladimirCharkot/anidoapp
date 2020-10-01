@@ -437,3 +437,9 @@ GRACIAS, GRACIAS, GRACIAS
 </div>
 
 <div id="fb2" class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
+
+<script>
+metas = document.querySelectorAll('meta')
+head = document.querySelector('head')
+for (let m of metas) { head.appendChild(m) }
+</script>
