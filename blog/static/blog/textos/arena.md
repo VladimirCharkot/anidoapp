@@ -6,9 +6,53 @@
 .sep{
     text-align: center;
 }
+
+.fb-share-button{
+  display: block;
+}
+
+.fb-share-button a {
+    background: #1a8ef4;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    border-radius: 5px;
+    float: right;
+    margin-left: 20%;
+    width: max-content;
+}
+
+#fb1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: max-content;
+}
+
+#fb2{
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  height: max-content;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.invi{
+  visibility: hidden;
+}
+
 </style>
 
-<div class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
+<div id="fb1" class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
+
+<div style="height: 0; backgound-image: url(/static/blog/fotos/arena.png)"><img style='visibility:hidden;' alt='Pantalla del zoom' src='/static/blog/fotos/arena.png'></img></div>
+
+<meta property="og:url" content="https://www.colectivoanido.com/piirspec/arena/" />
+<meta property="og:title" content="Sistematización del Ciclo de Entrevistas “Enseñando a aprender, aprender a enseñar” en Circo Arena">
+<meta property="og:image" content="https://www.colectivoanido.com/static/blog/fotos/arena.png" />
+<meta property="og:description" content="Colectivo A-Nido, en el marco de su proyecto de “Investigación, registro y sistematización de prácticas docentes en circo”, agradece la invitación a participar del ciclo de encuentros _*"Aprendiendo a enseñar, enseñando a aprender"*_ organizado por La Arena, Escuela de Circo con sede en Buenos Aires, Argentina." />
 
 ### Primera Llamada * Antesala
 
@@ -31,7 +75,8 @@ Tal fue el nombre elegido para el ciclo. En la presentación del segundo encuent
 Este texto tiene su puntapié inicial aquí: El circo debe estudiarse a sí mismo, escribirse, sistematizarse, nombrarse, inventar sus propias categorías y sistematizar sus procesos.
 
 >Es verdad que nuestro quehacer en el circo nos lleva a una práctica muy física. Entonces leemos menos, porque no leemos textos. Estudiamos menos, porque estudiamos mucho a través de la pantalla, del video, de la imagen. Son maneras de aprender el mundo de otra forma. Pero dejarse atravesar por el pensamiento de un filósofo, o por la obra de un autor, en el circo, me ha traído resultados inusitados.
-> -- Erica Stoppel
+><span class="firma">- Erica Stoppel</span>
+{.cita}
 
 En consonancia con lo anterior, se invita a pensar en el gran patrimonio de producción artística como alimento de la cultura visual en detrimento de la producción escrita sobre circo, como alimento de la cultura escrita, teniendo en cuenta las posibilidades y limitantes que cada una genera. Con esto, se recae en señalar la importancia de “documentar lo no documentado”[^2]. Lo escrito tiene el tremendo potencial de perdurar en el tiempo. Al registro se puede volver. Las palabras escritas abren el universo de la producción de conocimiento. Y es necesario que lo hagan quienes hacen circo. “Los cirqueros” pueden hablar, escribir, documentar, investigar: circo. Es decir, generar conocimiento _en y desde_ su propio campo de acción. Eso lleva a que el circo entre en diálogo con otros lenguajes (teatro, educación física, pedagogía, antropología, etc.) pero desde su especificidad, en su idioma original. Y no se dice aquí que el circo todo lo puede y no sea precisa otra mirada para comprenderse. De ninguna manera. Se trata más bien de, primero, afianzar bases sólidas sobre las que se pueda edificar. Se requiere escribir y problematizar el circo para estudiarlo y así, brindar alternativas y propuestas. Si eso está, entonces otros campos de conocimiento pueden dialogar, hacer aportes o críticas, sin poner en riesgo su propia identidad, es decir, que el circo deje de ser circo.
 
@@ -43,8 +88,10 @@ En los encuentros no se ha logrado el distanciamiento necesario de la trayectori
 Esto lo relacionamos más bien con un dar vueltas alrededor de, que estar abonando el centro de la tarea. Quizás sucede porque ese sea el espacio de actividad y participación común entre —-sino todos al menos la gran mayoría—- de los que participamos y nos apasionamos. ¡Vaya a saber! Las cuestiones pueden ser diversas. La nota que extraemos es: las balizas deberán prenderse cada vez que se diluya la temática de educación circense para evitar que los “destinos o rutas ya conocidas” guíen los caminos por dónde ir. Esto lleva a hacer un stop, advertir en qué se está, tomar distancia de lo cotidiano y reubicarse en el centro. Como sugiere Viviana Aguirre, trazando una analogía con la escritura:
 
 >Asumir una postura única e inconfundible que supone recogimiento y una cierta toma de distancia. Desde ese lugar abordar la observación, la conciencia, el viaje, la pregunta, la crítica, el significado y por qué no, el crecimiento
-> <span class="firma">- Aguirre Viviana. “Pájaro de papel”. P.1</span>
+> <span class="firma">- Viviana Aguirre[^3]</span>
 {.cita}
+
+[^3]: <sup>3</sup> Aguirre Viviana. “Pájaro de papel”. P.1
 
 Con los lentes de la especificidad de la educación en circo volvimos sobre el material de las entrevistas desgrabadas y delineamos ejes temáticos que permiten “**revisitarnos**” (palabra magistral que tomamos de Érica Stoppel).
 
@@ -103,7 +150,7 @@ Más claro aún, que nadie puede quedarse con un trozo del río y decir que lo h
 
 Todo es parte de un proceso que viene ya corriendo. No por eso es menos valiosa cada reinvención. Tampoco puede decirse que porque ya todo se ha hecho, tiene menor valor lo que hoy se hace. Es, quizás, momento de abrir nuevamente la frontera, de continuar abriéndola, entre el adentro y el afuera, entre lo tradicional y lo contemporáneo, entre la enseñanza de circo familiar y la institucional para ver la _tercera zona_, que involucra a ambas, que las recicla… _“La frontera indómita”_[^4] dice Graciela Montes. Un espacio a reinventar, a revisitar, superador de los quiebres. Una zona de construcción, que sigue en proceso, que es obra perdurable en el tiempo, que se presenta todos los días, que no tiene estreno… el _work in progress_, donde se toma lo que hay, conviviendo con las tensiones pero a la vez sabiéndose en pasos nuevos, abriendo brechas: construyendo.
 
-[^3]: <sup>3</sup> Montes, Graciela. “La frontera indómita. En torno a la construcción y defensa del espacio poético”. Ed. Fondo de Cultura Económica. 1999. México. Libro donde se reflexiona sobre el rol de la literatura actual y se encuentra en un brete similar, la literatura clásica y la que responde a las leyes del mercado.
+[^4]: <sup>4</sup> Montes, Graciela. “La frontera indómita. En torno a la construcción y defensa del espacio poético”. Ed. Fondo de Cultura Económica. 1999. México. Libro donde se reflexiona sobre el rol de la literatura actual y se encuentra en un brete similar, la literatura clásica y la que responde a las leyes del mercado.
 
 #### La enseñanza. Entre la técnica de circo y los procesos creativos.
 
@@ -123,13 +170,13 @@ Se denota allí una lectura clara de lo que sucede y un posicionamiento de flexi
 > <span class="firma">- Érica Stoppel</span>
 {.cita}
 
-Quizás la pregunta que aparece es entonces, ¿por dónde seguimos? Y consideramos importante detenerse allí para averiguar. Darse tiempo. Abrir espacio para encontrar los nodos por los que continuar armando la red educativa de circo. Colectivo A-Nido realiza un trabajo de revisitar las prácticas docentes para identificar cuáles son los puntos de encuentro entre técnica y propuesta artística, si los hay, y ver cómo se los enseña.  Cada docente puede escribir sus propios **“guiones didácticos”** o “documentación narrativa”[^4], que básicamente son escritos descriptivos sobre las clases vividas, para hallar y poner en valor su accionar pedagógico. Quizás puedan aparecer vacíos, nuevas preguntas, relaciones, etc… todo lo cual forma parte del “material” de reflexión sobre la práctica, asumiéndose como docente intelectual – como dice Giroux[^5] o profesional reflexivo[^6].
+Quizás la pregunta que aparece es entonces, ¿por dónde seguimos? Y consideramos importante detenerse allí para averiguar. Darse tiempo. Abrir espacio para encontrar los nodos por los que continuar armando la red educativa de circo. Colectivo A-Nido realiza un trabajo de revisitar las prácticas docentes para identificar cuáles son los puntos de encuentro entre técnica y propuesta artística, si los hay, y ver cómo se los enseña.  Cada docente puede escribir sus propios **“guiones didácticos”** o “documentación narrativa”[^5], que básicamente son escritos descriptivos sobre las clases vividas, para hallar y poner en valor su accionar pedagógico. Quizás puedan aparecer vacíos, nuevas preguntas, relaciones, etc… todo lo cual forma parte del “material” de reflexión sobre la práctica, asumiéndose como docente intelectual – como dice Giroux[^6] o profesional reflexivo[^7].
 
-[^4]: <sup>4</sup> Categoría conceptual creada por Daniel Suarez. El autor trabaja el concepto de “documentación narrativa” refiriéndose a las escrituras que puede hacer el docente sobre su experiencia en las clases. Muestra la potencialidad de este ejercicio como herramienta principal de reflexión sobre su práctica de enseñanza y de visibilización del trabajo docente a partir de construir conocimiento desde la práctica. Disponible en [pedagogica.edu.co](https://revistas.pedagogica.edu.co/index.php/NYN/article/view/1228/1225)
+[^5]: <sup>5</sup> Categoría conceptual creada por Daniel Suarez. El autor trabaja el concepto de “documentación narrativa” refiriéndose a las escrituras que puede hacer el docente sobre su experiencia en las clases. Muestra la potencialidad de este ejercicio como herramienta principal de reflexión sobre su práctica de enseñanza y de visibilización del trabajo docente a partir de construir conocimiento desde la práctica. Disponible en [pedagogica.edu.co](https://revistas.pedagogica.edu.co/index.php/NYN/article/view/1228/1225)
 
-[^5]: <sup>5</sup> Giroux, Henry A. “Los profesores como intelectuales”. Hacia una pedagogía crítica del aprendizaje. Ed. Paidos. 1997. Barcelona.
+[^6]: <sup>6</sup> Giroux, Henry A. “Los profesores como intelectuales”. Hacia una pedagogía crítica del aprendizaje. Ed. Paidos. 1997. Barcelona.
 
-[^6]: <sup>6</sup> Schön, Donald. A. “La formación de profesionales reflexivos. Hacia un nuevo diseño de la enseñanza y el aprendizaje en las profesiones” Ed. Paidos. 1988. España.
+[^7]: <sup>7</sup> Schön, Donald. A. “La formación de profesionales reflexivos. Hacia un nuevo diseño de la enseñanza y el aprendizaje en las profesiones” Ed. Paidos. 1988. España.
 
 En este contexto, la mirada de Marco Antonio Bortoletto colabora en ampliar el foco:
 
@@ -147,15 +194,15 @@ Se advierte un tanto más complejo.
 Marco agrega, sobre el final, una dimensión que no se nos puede escapar. Tiene que ver con las condiciones sociales, es decir, pensar cómo una propuesta de enseñanza interactúa con el entorno cultural y social en el que se aplica. Contemplar la mirada política del arte: para quiénes, qué se quiere enseñar, para qué, qué uso se hace del lenguaje circense, poético, visual, etc. Pues esas formas están ancladas en una realidad cambiante, política y socialmente activa, artísticamente inquieta y transgresora. Es necesario atender afuera y adentro, sentar las bases pedagógicas del trabajo educativo.
 
 >Nuestra tarea no se agota en la enseñanza de la matemática, de la geografía, de la sintaxis o de la historia (léase circo también). Además de la seriedad y la competencia con que debemos enseñar estos contenidos, nuestra tarea exige nuestro compromiso y nuestra actitud a favor de la superación de las injusticias sociales”
-> <span class="firma">- Paulo Freire[^7]</span>
+> <span class="firma">- Paulo Freire[^8]</span>
 {.cita}
 
-[^7]: <sup>7</sup> FREIRE, Paulo. _“Cartas para quien pretende enseñar”_. Sexta carta: de las relaciones entre la educadora y los educandos. Siglo veintiuno editores. 2da ed. 3er reimp. Buenos Aires. 2010. Pág. Nº 102
+[^8]: <sup>8</sup> FREIRE, Paulo. _“Cartas para quien pretende enseñar”_. Sexta carta: de las relaciones entre la educadora y los educandos. Siglo veintiuno editores. 2da ed. 3er reimp. Buenos Aires. 2010. Pág. Nº 102
 
 Por todo esto es que consideramos necesario **“revisitar”** las prácticas educativas circenses y profundizar en los sentidos que las atraviesan, más allá de qué tipo de circo se haga. Es decir, acentuar el foco de trabajo en **la práctica educativa desde un enfoque integral**. Quizás tomar distancia de la pregunta ¿qué tipo de circo hacés? Y darse el permiso de acercarse a ¿cómo haces circo? ¿Por qué eso que haces es considerado circo?
-Puede ser una propuesta artística o de formación, de enseñanza de circo tradicional o circo de creación[^8], circo social, etc. en todos los casos, que lo que tenga radical fuerza sea comprender la propuesta integral en sí: los objetivos de la clase (o de la obra, número, etc), el contenido (qué transmite), la metodología (disciplina de circo y forma de presentarla), contexto (público, estética), los recursos (técnica, luz, sonido).
+Puede ser una propuesta artística o de formación, de enseñanza de circo tradicional o circo de creación[^9], circo social, etc. en todos los casos, que lo que tenga radical fuerza sea comprender la propuesta integral en sí: los objetivos de la clase (o de la obra, número, etc), el contenido (qué transmite), la metodología (disciplina de circo y forma de presentarla), contexto (público, estética), los recursos (técnica, luz, sonido).
 
-[^8]: <sup>8</sup> Volviendo a tomar las palabras de Rafael Moraes.
+[^9]: <sup>9</sup> Volviendo a tomar las palabras de Rafael Moraes.
 
 #### La práctica de un enfoque integral
 
@@ -165,22 +212,22 @@ Dice Rafael Moraes:
 > <span class="firma">- Rafael Moraes</span>
 {.cita}
 
-Nos animamos a decir que allí está el foco. No sólo en cómo se transmite (las formas) sino en el que (contenido). _La forma es contenido y  el contenido no es independiente de la forma_, plantea la investigadora chilena Verónica Edwards[^9] pensando en las estrategias de enseñanza y nos servimos de tal concepto para las prácticas artísticas también.
+Nos animamos a decir que allí está el foco. No sólo en cómo se transmite (las formas) sino en el que (contenido). _La forma es contenido y  el contenido no es independiente de la forma_, plantea la investigadora chilena Verónica Edwards[^10] pensando en las estrategias de enseñanza y nos servimos de tal concepto para las prácticas artísticas también.
 
-[^9]: <sup>9</sup> Ver en el libro “La escuela cotidiana” de Elsie Rockwell. Cap. V. “Las formas del conocimiento en el aula” de Verónica Edwards. P. 145. Ed. Fondo de Cultura Económica. México
+[^10]: <sup>10</sup> Ver en el libro “La escuela cotidiana” de Elsie Rockwell. Cap. V. “Las formas del conocimiento en el aula” de Verónica Edwards. P. 145. Ed. Fondo de Cultura Económica. México
 
 Si al integrar cada parte puede entenderse el todo, si hay una correspondencia entre ellas, si hay una base de sustento epistemológico que permita explicar y defender lo que se está transmitiendo, entonces, dejará de tener sentido el procurar encasillar aquí o allá. Adquiere relevancia la propuesta.
 Al respecto tomamos el aporte de unas pedagogas que si bien se refieren a docentes del sistema educativo, puede extrapolarse perfectamente la cita al campo de la educación circense:
 
 >El docente se aboca al método como un intento de dominio mágico que le permita salvar el conjunto de contradicciones que vive […] la actividad de la clase se parcializa en diversas técnicas, procedimientos y recursos, mediante los cuales se pretende movilizarla. No se reconoce en muchos casos un criterio que dé coherencia a la propuesta pedagógica.
-> <span class="firma">- Edelstein, Gloria y Coria, Adela[^10]</span>
+> <span class="firma">- Edelstein, Gloria y Coria, Adela[^11]</span>
 {.cita}
 
-[^10]: <sup>10</sup> Edelstein, Gloria y Coria, Adela: “Imágenes e Imaginación. Iniciación a la Docencia”. Colección Triángulos Pedagógicos. Kapelusz editora S.A., Bs. As. Pág. Nº 64 - 65.
+[^11]: <sup>11</sup> Edelstein, Gloria y Coria, Adela: “Imágenes e Imaginación. Iniciación a la Docencia”. Colección Triángulos Pedagógicos. Kapelusz editora S.A., Bs. As. Pág. Nº 64 - 65.
 
-La diversidad de propuestas artísticas, ancladas en una línea de trabajo circense u otra, podrán coexistir con igual valor y legitimidad en el campo artístico, pudiendo fundamentar su existencia y veracidad. En este camino, el artista en formación va eligiendo, aprendiendo formas, buscando maestros/as. Será preciso confiar en que extraerán de cada quien, lo que les sea útil aprender para _alzarse sobre sí mismos_[^11]:
+La diversidad de propuestas artísticas, ancladas en una línea de trabajo circense u otra, podrán coexistir con igual valor y legitimidad en el campo artístico, pudiendo fundamentar su existencia y veracidad. En este camino, el artista en formación va eligiendo, aprendiendo formas, buscando maestros/as. Será preciso confiar en que extraerán de cada quien, lo que les sea útil aprender para _alzarse sobre sí mismos_[^12]:
 
-[^11]: <sup>11</sup> Simons, M. y Masschelein, J. (2014). “Introducción”. _En defensa de la escuela. Una cuestión pública._ Buenos Aires. Ed. Miño & Dávila. Pág. 3
+[^12]: <sup>12</sup> Simons, M. y Masschelein, J. (2014). “Introducción”. _En defensa de la escuela. Una cuestión pública._ Buenos Aires. Ed. Miño & Dávila. Pág. 3
 
 >Este quehacer artesanal tan peculiar y tan particular en el cual cada quien imprime su manera de ser y que nos transforma en artesanos, en artistas y creadores de nuestra propia trayectoria. Creo que en la formación en circo de manera general vamos juntando cosas que van haciendo sentido -conceptos, ideas, ejercicios- y por supuesto que es un ejercicio colaborativo, que tuvo la reunión de muchos agregados (refiriéndose a la diversidad de maestros con los que se formó).
 > <span class="firma">- Erica Stoppel</span>
@@ -189,14 +236,14 @@ La diversidad de propuestas artísticas, ancladas en una línea de trabajo circe
 Como síntesis de una lectura transversal puede decirse que las alternativas metodológicas (técnica + investigación + multidisciplina) a través de las cuales transmitir (idea, concepto, conocimiento) son condiciones necesarias del trabajo docente y/o del artista. Es importante adoptarlas como categorías para revisitar nuestra práctica y reflexionar críticamente sobre ellas. Lo cual permitirá asumirse desde un lugar emancipador del saber, en cuanto, en el decir de Ranciére, podamos plantear nuevas ignorancias, nuevas fronteras indómitas:
 
 >Es la lógica misma de la relación pedagógica: el papel atribuido allí al maestro es el de suprimir la distancia entre su saber y la ignorancia del ignorante. Sus lecciones y los ejercicios que él da tiene la finalidad de reducir progresivamente el abismo que los separa. Por desgracia, no puede reducir la brecha excepto a condición de recrearla incesantemente. Para reemplazar la ignorancia por el saber, debe caminar siempre un paso adelante, poner entre el alumno y él una nueva ignorancia.
-> <span class="firma">- Jacques Rancière[^12]</span>
+> <span class="firma">- Jacques Rancière[^13]</span>
 {.cita}
 
-[^12]: <sup>12</sup> RANCIÉRE, Jacques. “El espectador emancipado”. 1 a ed. – Buenos Aires: Manantial, 2010. Pág. Nº  81.
+[^13]: <sup>13</sup> RANCIÉRE, Jacques. “El espectador emancipado”. 1 a ed. – Buenos Aires: Manantial, 2010. Pág. Nº  81.
 
-#### La interdisciplina[^13] is coming. ¿¡Run Circo Run!?
+#### La interdisciplina[^14] is coming. ¿¡Run Circo Run!?
 
-[^13]: <sup>13</sup> Tomamos el concepto de Interdisciplina ya que engloba al diálogo entre los aportes de distintas disciplinas. Multidisciplina en cambio, refiere a la convivencia de diversas disciplinas, pero no supone un diálogo o afectación entre unas y otras.
+[^14]: <sup>14</sup> Tomamos el concepto de Interdisciplina ya que engloba al diálogo entre los aportes de distintas disciplinas. Multidisciplina en cambio, refiere a la convivencia de diversas disciplinas, pero no supone un diálogo o afectación entre unas y otras.
 
 Comenzamos este apartado con una anécdota que puede ser útil. La Secretaría de Cultura de México otorga las controvertidas “Becas Fonca” a artistas y compañías. Básicamente son apoyos económicos anuales destinados a impulsar la formación y creación artística de ese país. La cuestión es que, quien postula, debe elegir una categoría para su propuesta: danza – teatro – circo - música o interdisciplina.
 
@@ -204,23 +251,23 @@ La trapecista mexicana Mariana Fernández se presenta a una primera audición ba
 
 Entonces… ¿Dónde está la singularidad del circo que hace decir esto es circo y esto no? ¿Cómo se vincula el circo con el resto de las artes escénicas? ¿Qué límites y posibilidades se abren en el circo actual? ¿Hasta dónde se estructura o desestructura lo que se conoce como “circo” hasta ahora? Se trae a colación una pregunta extraída de una clase de malabares dictada por Sebastián Rojo: _“entonces, si yo bailo butoh haciendo capilares ¿es circo o es danza?  Si bailo mientras vuelan 3 objetos en el aire, ¿estoy haciendo malabar o danza?"_ Estos interrogantes se suman a otros que surgieron en las entrevistas de la mano del Mono:
 
->A mí me parece que el arte del circo involucra muchísimo elementos… casi todos… ¿cuáles crees vos que son aquellos que sí o sí tiene que estar para que algo sea circo?[^14]
+>A mí me parece que el arte del circo involucra muchísimo elementos… casi todos… ¿cuáles crees vos que son aquellos que sí o sí tiene que estar para que algo sea circo?[^15]
 {.cita}
 
->Yo creo que hay cuando uno analiza o intenta pensar la enseñanza en el circo, que no es lo mismo que la enseñanza en educación física ni en teatro, si bien podría tener que ver, pero en realidad son las dos cosas, y varias más. El aprender trabajando, ¿qué opinión tenés vos? En el circo, ¿no?[^15]
+>Yo creo que hay cuando uno analiza o intenta pensar la enseñanza en el circo, que no es lo mismo que la enseñanza en educación física ni en teatro, si bien podría tener que ver, pero en realidad son las dos cosas, y varias más. El aprender trabajando, ¿qué opinión tenés vos? En el circo, ¿no?[^16]
 {.cita}
 
->Las nuevas reflexiones sobre la enseñanza del circo se relacionan mucho con otras disciplinas, como la danza, el teatro, el deporte... cómo ves vos... cómo sacarías el acento del circo para que no se pierda atrás del deporte, atrás del teatro, detrás de la danza. ¿Cómo entendés ese equilibrio? Delicado equilibrio[^16]
+>Las nuevas reflexiones sobre la enseñanza del circo se relacionan mucho con otras disciplinas, como la danza, el teatro, el deporte... cómo ves vos... cómo sacarías el acento del circo para que no se pierda atrás del deporte, atrás del teatro, detrás de la danza. ¿Cómo entendés ese equilibrio? Delicado equilibrio[^17]
 ><span class="firma">- Mono Silva</span>
 {.cita}
 
-[^14]: <sup>14</sup> Pregunta extraída de la entrevista a Marco Antonio Bortoleto.
-[^15]: <sup>15</sup> Pregunta extraída de la entrevista a Érica Stoppel.
-[^16]: <sup>16</sup> Pregunta extraída de la entrevista a Rafael Moraes.
+[^15]: <sup>15</sup> Pregunta extraída de la entrevista a Marco Antonio Bortoleto.
+[^16]: <sup>16</sup> Pregunta extraída de la entrevista a Érica Stoppel.
+[^17]: <sup>17</sup> Pregunta extraída de la entrevista a Rafael Moraes.
 
-Allí está de manifiesto la cuestión que suele preocupar: ¿qué de lo que se hace, es o sigue siendo circo? La atención (y la tensión) está puesta en que el circo no se pierda ni se mimetice, no solo detrás de otras artes escénicas sino también, tras el deporte [^17]. Esto último apareció recurrentemente en los debates. Compartimos dos voces al respecto:
+Allí está de manifiesto la cuestión que suele preocupar: ¿qué de lo que se hace, es o sigue siendo circo? La atención (y la tensión) está puesta en que el circo no se pierda ni se mimetice, no solo detrás de otras artes escénicas sino también, tras el deporte[^18]. Esto último apareció recurrentemente en los debates. Compartimos dos voces al respecto:
 
-[^17]: <sup>17</sup> Más adelante se hablará de las posibles vías de trabajo como afianzamiento del sector.
+[^18]: <sup>18</sup> Más adelante se hablará de las posibles vías de trabajo como afianzamiento del sector.
 
 >¿Por qué el circo no es un deporte? ¿Por qué es tan importante que el circo sea llevado por el ministerio de educación y el de cultural, juntos?… porque es eso... Transmisión y arte. Hay muchas iniciativas que tratan de pensar el circo dentro de la educación física, pero la realidad es que ahí se trata el circo desde una visión deportiva… que busca la realización deportiva. El arte no.  Lo más importante es la trasmisión, lo que se genera. Ese desconocido que va a existir.
 >El circo no existe sin público. Está bien romper fronteras (refiriéndose a la multidisciplinariedad)  pero siempre tirar para nuestro lado… para el circo. Sino le pasa lo que le pasó… de arte mayor a menor con el tiempo… acá en argentina sigue siendo, a pesar de los intentos, un arte menor.
@@ -235,16 +282,16 @@ Entre lo dicho hay algo que no podemos evitar cuestionarnos. Las fronteras se ro
 Según Edgar Morin hay una línea de separación cada vez más profunda entre los conocimientos adquiridos o segmentados y la realidad, cada vez más transversal, multidimensional y global.
 
 >De aquí en adelante, ya no son solo los errores de hecho (de ignorancia), de pensamiento (dogmatismo) sino el error de un pensamiento parcial y, por lo tanto, tendencioso, el error del pensamiento binario que no ve más que o/o, incapaz de combinar y/y, y, más profundamente, el error del pensamiento reductor y del pensamiento disyuntivo ciego a toda complejidad, que constituye el problema a tratar.
-><span class="firma">- Edgar Morín[^18]</span>
+><span class="firma">- Edgar Morín[^19]</span>
 {.cita}
 
-[^18]: <sup>18</sup> Morin, Edgar. “Enseñar a vivir”. Manifiesto para cambiar la educación. Ed. Nueva Visión. 2014. Ciudad de Buenos Aires, Argentina. P. 19
+[^19]: <sup>19</sup> Morin, Edgar. “Enseñar a vivir”. Manifiesto para cambiar la educación. Ed. Nueva Visión. 2014. Ciudad de Buenos Aires, Argentina. P. 19
 
 Volvamos entonces al título.
 
-Si el circo quisiera correr, no tiene lugar a dónde ir. Más bien le toca aceptar la interdisciplinariedad como realidad dentro de la cual juega. Parafraseando a la poeta santafesina Diana Fellisi que dice: _“la poesía al ir contra la lengua, descubre algo en la lengua”_[^19] – entonces: el circo, al ir contra el circo, descubre algo en sí mismo que lo referencia como circo.
+Si el circo quisiera correr, no tiene lugar a dónde ir. Más bien le toca aceptar la interdisciplinariedad como realidad dentro de la cual juega. Parafraseando a la poeta santafesina Diana Fellisi que dice: _“la poesía al ir contra la lengua, descubre algo en la lengua”_[^20] – entonces: el circo, al ir contra el circo, descubre algo en sí mismo que lo referencia como circo.
 
-[^19]: <sup>19</sup> [Los confines de la palabra: Lo poético - Canal Encuentro](https://www.youtube.com/watch?v=JKvczu72ICg)
+[^20]: <sup>20</sup> [Los confines de la palabra: Lo poético - Canal Encuentro](https://www.youtube.com/watch?v=JKvczu72ICg)
 
 Ahora bien, esto, que parece recaer más sobre la costilla artística que la educativa, se trae a colación para pensar dónde se circunscribe la educación circense, qué campos de conocimiento la integran, cómo es atravesada por las corrientes de pensamiento, de qué modo se vincula con las prácticas deportivas o con las artes escénicas.
 
@@ -329,33 +376,33 @@ Para habitar estas mediaciones desde el rol docente, desde Colectivo A- Nido, in
 
 Desde las voces de los entrevistados, rescatamos lo que consideramos como desafíos al presente del circo:
 
-###### Colectivizar y aunarse políticamente
+###### * Colectivizar y aunarse políticamente
 
 >Tenemos que ser más listos y trabajar de forma más cooperativa y combinada para ocupar mayores espacios políticos de decisión. Sino seguiremos en la periferia. Latinoamérica avanza. Argentina, Brasil, Chile… van avanzando pero vamos demasiado lentos…En Europa, en Asia, en Oceanía, van muy adelante. Están saliendo formaciones de circo muy sólidas en todo el mundo y nosotros aún estamos parados.
 ><span class="firma">- Marco Antonio Bortoleto</span>
 {.cita}
 
-###### Jerarquizar el circo
+###### * Jerarquizar el circo
 
 >En Francia lo que hizo que eso existiera (refiriéndose al trabajo conjunto de pedagogos y docentes de circo) fue una federación de circo (FEFEC) (FEDEC) que se ocupó de jerarquizar el circo. Eso nos une y nos hace más fuertes. Y frente al estado. Eso nos hará avanzar de otra manera.
 >Aquí existen iniciativas muy buenas, como el “circo abierto” que  van en esa dirección, pero ahí entra también otra cuestión para discutir… aquí, en Argentina se quedó muy calcado el circo con el callejero. Y esa es una de las formas de circo. El circo es diverso (…) Es necesario perder algo para poder avanzar a largo plazo.
 ><span class="firma">- Rafael Moraes</span>
 {.cita}
 
-###### Diseñar objetivos claros
+###### * Diseñar objetivos claros
 
 >Crear metodologías que ayuden a ir, aun por un camino sinuoso, hacia dónde se quiere ir.
 >(…) El camino puede ser más o menos sinuoso, o lineal pero está en dirección de lo que quiero.  En el circo la gente no sabe bien que quiere, y cuando llega a los treinta no ha hecho nada… son caminos no lineales pero sin un punto a donde se va.
 ><span class="firma">- Marco Antonio Bortoleto</span>
 {.cita}
 
-###### El circo en el sistema educativo formal: escuelas primarias y secundarias
+###### * El circo en el sistema educativo formal: escuelas primarias y secundarias
 
 >Si la escuela es el espacio de ofrecer cultura, de mediar cultura como parte de nuestra vida, el arte, que es una parte importante de la cultura, debe estar en la escuela, debe de ser discutido. Así como la filosofía, la matemática, etc. cualquier arte. Entonces ¿por qué no el circo?
 ><span class="firma">- Marco Antonio Bortoleto</span>
 {.cita}
 
-###### Impulsar la investigación en circo
+###### * Impulsar la investigación en circo
 
 >Entonces mis acciones como agente política, dentro de mi lucha como ciudadana artista, trato siempre de impulsionar que vuelvan a surgir las subvenciones para proyectos de investigación. Necesitamos sí, teorizar, conceptuar y pensar sobre lo que hacemos, porque es una manera de generar conocimiento. ¡Hagamos la red latinoamericana de investigación!
 ><span class="firma">- Érica Stoppel</span>
@@ -388,4 +435,4 @@ GRACIAS, GRACIAS, GRACIAS
   <p>Investigación educativa.</p>
 </div>
 
-<div class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
+<div id="fb2" class="fb-share-button" data-href="https://www.colectivoanido.com/piirspec/arena/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.colectivoanido.com%2Fpiirspec%2Farena%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir en facebook</a></div>
