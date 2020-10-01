@@ -49,10 +49,12 @@
 
 <div style="height: 0; backgound-image: url(/static/blog/fotos/arena.png)"><img style='visibility:hidden;' alt='Pantalla del zoom' src='/static/blog/fotos/arena.png'></img></div>
 
-<meta property="og:url" content="https://www.colectivoanido.com/piirspec/arena/" />
-<meta property="og:title" content="Sistematización del Ciclo de Entrevistas “Enseñando a aprender, aprender a enseñar” en Circo Arena">
-<meta property="og:image" content="https://www.colectivoanido.com/static/blog/fotos/arena.png" />
-<meta property="og:description" content="Colectivo A-Nido, en el marco de su proyecto de “Investigación, registro y sistematización de prácticas docentes en circo”, agradece la invitación a participar del ciclo de encuentros _*"Aprendiendo a enseñar, enseñando a aprender"*_ organizado por La Arena, Escuela de Circo con sede en Buenos Aires, Argentina." />
+<div>
+  <meta property="og:url" content="https://www.colectivoanido.com/piirspec/arena/" />
+  <meta property="og:title" content="Sistematización del Ciclo de Entrevistas “Enseñando a aprender, aprender a enseñar” en Circo Arena">
+  <meta property="og:image" content="https://www.colectivoanido.com/static/blog/fotos/arena.png" />
+  <meta property="og:description" content="Colectivo A-Nido, en el marco de su proyecto de “Investigación, registro y sistematización de prácticas docentes en circo”, agradece la invitación a participar del ciclo de encuentros Aprendiendo a enseñar, enseñando a aprender organizado por La Arena, Escuela de Circo con sede en Buenos Aires, Argentina." />
+</div>
 
 ### Primera Llamada * Antesala
 
