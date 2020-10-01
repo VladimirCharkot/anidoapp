@@ -18,7 +18,7 @@ p, .footnote {
   background-color: #4b683b17;
   text-align: right;
   font-size: 0.85rem;
-  font.weight: 1000;
+  font-weight: 1000;
 }
 
 .firma{
@@ -188,11 +188,13 @@ h6{
 
 @media (width < 1140px){
     .articulo > p, .footnote { padding: 1vw 5vw 1vw 5vw; }
+    .cita{ padding: 3% 5%; }
     #contenido { margin: 0vw; }
 }
 
 @media only screen
 and (max-device-width: 800px){
     .articulo > p, .footnote { padding: 1vw 5vw 1vw 5vw; }
+    .cita{ padding: 3% 5%; } 
     #contenido { margin: 0vw; }
 }
