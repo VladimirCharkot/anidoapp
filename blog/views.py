@@ -82,6 +82,8 @@ def contribuir(request):
     return render_articulo(request, contrib)
 
 
+def cirqueros(request):
+    return render_articulo(request, los_cirqueros)
 
 
 

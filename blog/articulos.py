@@ -340,3 +340,35 @@ charlas_arena = {
 		'md': 'blog/static/blog/textos/arena.md'
 	}
 }
+
+
+los_cirqueros = {
+	'clase': 'blog/articulo.html',
+	'titulo': 'Biblioteca',
+
+	'contenido': {
+		'titulo': 'Lily Franco - Los cirqueros',
+
+		'img_titulo': {
+			'origen': '/static/blog/fotos/cirqueros.png',
+			'size': '100%',
+			'pos': 'center 25%',
+			'color': '#97b2f7'
+		},
+
+		'img_seccion': {
+			'origen': '/static/blog/fotos/cirqueros.png',
+			'size': '100%',
+			'pos': 'center 25%',
+			'color': '#ffffffe0'
+		},
+
+		'pdf': {
+			'link': '/static/blog/pdf/Lily Franco - Los cirqueros.pdf',
+			'nombre': 'Lily Franco - Los cirqueros.pdf'
+		},
+
+		# 'intro': 'Colectivo A-Nido — para La Arena Circo',
+		'md': 'blog/static/blog/textos/cirqueros.md'
+	}
+}

@@ -25,6 +25,8 @@ urlpatterns = [
 
     path('contribuir/', views.contribuir),
 
+    path('biblioteca/cirqueros', views.cirqueros),
+
 
 
 #_cam2019.html  _contribuir.html  _entrevista_craig.html  _index.html  _integrantes.html  _proyecto.html
