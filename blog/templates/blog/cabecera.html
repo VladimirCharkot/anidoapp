@@ -141,6 +141,9 @@ Por hacer:
       </div>
     </li>
 
+
+
+
     <li><a id="proyectos" href="#">Proyectos</a>
 
       <div class="submenu" style="right: 10vw;">
@@ -149,17 +152,17 @@ Por hacer:
           <ul>
 
             <!--"-->
-            <li class="subsubli" onmouseover="set_subsubmenu(this);" data-target="submenu_piirspec">
+            <li class="subsubli" onmouseover="hide_subsubmenus(this); set_subsubmenu(this);" data-target="submenu_piirspec">
               <a href="/piirspec/"
-                 onmouseover="set_vistazo(this);"
+                 onmouseover="set_vistazo(this); hide_subsubmenus(this);"
                  onmouseout="reset_pie(this);"
                  data-img="/static/blog/fotos/ronda.jpg"
                  data-pie="Proyecto itinerante de investigación, registro y sistematización de prácticas educativas en el circo">PIIRSPEC</a>
             </li>
 
-            <li class="subsubli" onmouseover="set_subsubmenu(this);" data-target="submenu_sala">
+            <li class="subsubli" onmouseover="hide_subsubmenus(this); set_subsubmenu(this);" data-target="submenu_sala">
               <a href="/salita/"
-                 onmouseover="set_vistazo(this); hide_subsubmenus(this);"
+                 onmouseover="set_vistazo(this); "
                  onmouseout="reset_pie(this);"
                  data-img="/static/blog/fotos/libros-2.jpg"
                  data-pie="Bibliopropuestas de A-Nido">Sala de lectura</a>
