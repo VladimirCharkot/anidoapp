@@ -26,6 +26,7 @@
     var subsubmenu = document.querySelector('#'+tid);
     subsubmenu.style.visibility = 'visible';
     subsubmenu.style.opacity = 1;
+    subsubmenu.style.maxHeight = '1000px';
   }
 
   function hide_subsubmenus(o){
@@ -34,6 +35,7 @@
     for (var i=0; i < ssms.length; i++){
       ssms[i].style.visibility = 'hidden';
       ssms[i].style.opacity = 0;
+      ssms[i].style.maxHeight = '0px';
     }
   }
 
@@ -155,12 +157,12 @@ Por hacer:
                  data-pie="Proyecto itinerante de investigación, registro y sistematización de prácticas educativas en el circo">PIIRSPEC</a>
             </li>
 
-            <li onmouseover="hide_subsubmenus(this);">
+            <li class="subsubli" onmouseover="set_subsubmenu(this);" data-target="submenu_sala">
               <a href="/salita/"
                  onmouseover="set_vistazo(this); hide_subsubmenus(this);"
                  onmouseout="reset_pie(this);"
                  data-img="/static/blog/fotos/libros-2.jpg"
-                 data-pie="Una pequeña sala de lectura itinerante">Sala de lectura</a>
+                 data-pie="Bibliopropuestas de A-Nido">Sala de lectura</a>
             </li>
 
             <li onmouseover="hide_subsubmenus(this);">
@@ -219,6 +221,27 @@ Por hacer:
                  data-img="/static/blog/fotos/moebius.jpg"
                  data-pie="¡Nos mandaron a estudiar!">
               <li>Crónicas I</li>
+            </a>
+
+          </ul>
+
+
+          <ul class="subsubmenu" id="submenu_sala">
+
+            <a href="/biblioteca/cirqueros/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/libros-2.jpg"
+                 data-pie="Lily Franco - Los Cirqueros">
+              <li>Los Cirqueros</li>
+            </a>
+
+            <a href="/salita/"
+                 onmouseover="set_vistazo(this);"
+                 onmouseout="reset_pie(this);"
+                 data-img="/static/blog/fotos/libros-2.jpg"
+                 data-pie="¡Llevamos una salita en el nido!">
+              <li>Salita itinerante</li>
             </a>
 
           </ul>
