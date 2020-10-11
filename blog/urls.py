@@ -25,7 +25,7 @@ urlpatterns = [
 
     path('contribuir/', views.contribuir),
 
-    path('biblioteca/cirqueros', views.cirqueros),
+    path('biblioteca/cirqueros/', views.cirqueros),
 
 
 
