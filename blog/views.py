@@ -63,6 +63,9 @@ def craig(request):
 def arena(request):
     return render_articulo(request, charlas_arena)
 
+def cam22(request):
+    return render_articulo(request, cam2022)
+
 
 def cronica_1(request):
     return render_articulo(request, a_estudiar)

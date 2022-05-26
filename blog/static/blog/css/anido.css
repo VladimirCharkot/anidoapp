@@ -40,6 +40,7 @@
     font-family: 'DM Mono';
     letter-spacing: 0.5vw;
     position: relative;
+    text-shadow: 2px 2px 5px white;
 
     font-size: 1.2em;
     text-align: center;
@@ -91,10 +92,10 @@ body {
 }
 
 @media (width < 1140px){
-    #contenido { margin: 0vw; font-size: 1.5rem; top: 15vw; }
+    #contenido { margin: 0vw; font-size: 1.5rem; top: 10vw; }
 }
 
 @media only screen
 and (max-device-width: 800px){
-    #contenido { margin: 0vw; font-size: 1.5rem; top: 15vw; }
+    #contenido { margin: 0vw; font-size: 1.5rem; top: 10vw; }
 }

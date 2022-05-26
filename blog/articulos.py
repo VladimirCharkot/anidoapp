@@ -190,6 +190,38 @@ cam2019 = {
 }
 
 
+cam2022 = {
+	'clase': 'blog/articulo.html',
+	'titulo': 'CAM 22',
+
+	'contenido': {
+		'titulo': 'Acerca del acompañar la práctica docente en el malabar: Un punto de partida para pensar la formación de formadores',
+
+		'img_titulo': {
+			'origen': '/static/blog/fotos/cam22/playa_pelotas.jpg',
+			'size': 'cover',
+			'pos': 'center top',
+			'color': '#5a7bd1ab'
+		},
+
+		'img_seccion': {
+			'origen': '/static/blog/fotos/cam22/atencion.jpg',
+			'size': 'cover',
+			'pos': 'center',
+			'color': '#ffffffe0'
+		},
+
+		# 'pdf': {
+		# 	# 'link': '/static/blog/pdf/cam_2019.pdf',
+		# 	'nombre': 'Proyecto A-Nido - Experiencia CAM22.pdf'
+		# },
+
+		'intro': 'Algunos aportes desde lo trabajado en la Convención de Malabares 2022. Miramar de Ansenuza, Córdoba – Argentina',
+		'md': 'blog/static/blog/textos/cam2022.md'
+	}
+}
+
+
 craig_entrevista = {
 	'clase': 'blog/articulo.html',
 	'titulo': 'Entrevista a Craig Quat',

@@ -16,6 +16,7 @@ urlpatterns = [
     path('piirspec/cam2019/', views.cam19),
     path('piirspec/craig/', views.craig),
     path('piirspec/arena/', views.arena),
+    path('piirspec/cam22/', views.cam22),
 
     path('cronicas/1/', views.cronica_1),
 
@@ -31,11 +32,11 @@ urlpatterns = [
 
 #_cam2019.html  _contribuir.html  _entrevista_craig.html  _index.html  _integrantes.html  _proyecto.html
     # retro:
-    path('cam2019.html', views.cam19),
-    path('contribuir.html', views.contribuir),
-    path('entrevista_craig.html', views.craig),
-    path('integrantes.html', views.integrantes),
-    path('proyecto.html', views.piirspec),
+    # path('cam2019.html', views.cam19),
+    # path('contribuir.html', views.contribuir),
+    # path('entrevista_craig.html', views.craig),
+    # path('integrantes.html', views.integrantes),
+    # path('proyecto.html', views.piirspec),
 
     path('test/', views.pagina, {'articulo': 'CAM 2019'})
 ]
